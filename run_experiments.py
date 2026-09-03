@@ -45,7 +45,7 @@ SENT_BATCH_SIZE = 8   # 文本实验batch_size（梯度累积等效256）
 
 # GPU 池：可用 GPU ID 列表。不同实验会轮转分配到不同 GPU 上。
 # GPU pool: available GPU IDs. Experiments are round-robin assigned across GPUs.
-GPU_POOL = []
+GPU_POOL = ["0"]
 
 # CPU 额外并行槽位：在 GPU 任务之外，额外用 CPU 跑多少个实验。
 # 设为 0 表示自动计算（CPU 总核数 // 8，最多 4）。

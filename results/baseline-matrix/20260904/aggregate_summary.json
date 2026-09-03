@@ -1,0 +1,52 @@
+{
+ "bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/full_data": {
+  "n_repeats": 3,
+  "final_metrics_mean_std": {
+   "ACC": {
+    "mean": 0.6747,
+    "std": 0.1258
+   },
+   "DEO": {
+    "mean": 0.0119,
+    "std": 0.012
+   },
+   "FR": {
+    "mean": 0.9881,
+    "std": 0.012
+   },
+   "HM": {
+    "mean": 0.7973,
+    "std": 0.0859
+   },
+   "SPD": {
+    "mean": 0.0261,
+    "std": 0.0399
+   }
+  }
+ },
+ "moji/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/validation_2000": {
+  "n_repeats": 3,
+  "final_metrics_mean_std": {
+   "ACC": {
+    "mean": 0.6985,
+    "std": 0.0009
+   },
+   "DEO": {
+    "mean": 0.0008,
+    "std": 0.0013
+   },
+   "FR": {
+    "mean": 0.9992,
+    "std": 0.0013
+   },
+   "HM": {
+    "mean": 0.8222,
+    "std": 0.0002
+   },
+   "SPD": {
+    "mean": 0.0016,
+    "std": 0.0027
+   }
+  }
+ }
+}
