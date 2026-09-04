@@ -1,0 +1,1699 @@
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+[TensorBoard] Support is available.
+[TensorBoard] After training, run: tensorboard --logdir=./tb_logs
+[TensorBoard] Or view all experiments: tensorboard --logdir=./tb_logs --bind_all
+2026-09-04 00:05:45,136 INFO    : Experiment 1/1 setup finish
+2026-09-04 00:05:45,136 INFO    : Parameter announcement
+2026-09-04 00:05:45,136 INFO    : ****** mode : train ******
+2026-09-04 00:05:45,136 INFO    : ****** algorithm : FedAvg ******
+2026-09-04 00:05:45,136 INFO    : ****** learning_rate : 5e-05 ******
+2026-09-04 00:05:45,136 INFO    : ****** optimize_method : sgd ******
+2026-09-04 00:05:45,136 INFO    : ****** dataset : bios ******
+2026-09-04 00:05:45,136 INFO    : ****** task : SENT_CLF ******
+2026-09-04 00:05:45,136 INFO    : ****** batch_size : 32 ******
+2026-09-04 00:05:45,136 INFO    : ****** test_batch_size : 512 ******
+2026-09-04 00:05:45,136 INFO    : ****** cuda : 0 ******
+2026-09-04 00:05:45,136 INFO    : ****** max_len : 32 ******
+2026-09-04 00:05:45,136 INFO    : ****** system_data_count : 2000000 ******
+2026-09-04 00:05:45,136 INFO    : ****** tb_monitor : {'gradient': False, 'embedding': False, 'fisher': False, 'sharpness': False, 'activation': False, 'update_stats': False, 'client_divergence': False} ******
+2026-09-04 00:05:45,136 INFO    : ****** tb_log_dir : None ******
+2026-09-04 00:05:45,136 INFO    : ****** model_heter_frac : 0 ******
+2026-09-04 00:05:45,136 INFO    : ****** split_strategy : Dirichlet05 ******
+2026-09-04 00:05:45,136 INFO    : ****** communication_round_I : 50 ******
+2026-09-04 00:05:45,136 INFO    : ****** algorithm_epoch_T : 1 ******
+2026-09-04 00:05:45,136 INFO    : ****** num_clients_K : 20 ******
+2026-09-04 00:05:45,136 INFO    : ****** start_exp : 1 ******
+2026-09-04 00:05:45,136 INFO    : ****** resume : True ******
+2026-09-04 00:05:45,136 INFO    : ****** exp_repeat_times : 3 ******
+2026-09-04 00:05:45,136 INFO    : ****** parallel_repeats : 1 ******
+2026-09-04 00:05:45,136 INFO    : ****** base_seed : 42 ******
+2026-09-04 00:05:45,136 INFO    : ****** use_amp : true ******
+2026-09-04 00:05:45,136 INFO    : ****** partition_cache_root : ./partition_cache ******
+2026-09-04 00:05:45,136 INFO    : ****** partition_min_size : 1 ******
+2026-09-04 00:05:45,136 INFO    : ****** partition_max_retries : 100 ******
+2026-09-04 00:05:45,136 INFO    : ****** partition_repair_policy : minimum_move_v1 ******
+2026-09-04 00:05:45,136 INFO    : ****** dataloader_num_workers : 8 ******
+2026-09-04 00:05:45,137 INFO    : ****** checkpoint_save_freq : 1 ******
+2026-09-04 00:05:45,137 INFO    : ****** checkpoint_keep_latest : 1 ******
+2026-09-04 00:05:45,137 INFO    : ****** final_artifact_policy : metrics_only ******
+2026-09-04 00:05:45,137 INFO    : ****** CUDA_VISIBLE_DEVICES : 0 ******
+2026-09-04 00:05:45,137 INFO    : ****** device : cuda ******
+2026-09-04 00:05:45,137 INFO    : ****** dataset_name : bios ******
+2026-09-04 00:05:45,137 INFO    : ****** hypothesis : BERTCLASSIFIER ******
+2026-09-04 00:05:45,137 INFO    : ****** classifier_type : linear ******
+2026-09-04 00:05:45,137 INFO    : ****** miu : 1 ******
+2026-09-04 00:05:45,137 INFO    : ****** γ_k_style : uniform_distribution ******
+2026-09-04 00:05:45,137 INFO    : ****** FedRenyi_λ : 1 ******
+2026-09-04 00:05:45,137 INFO    : ****** global_group_loss_gap : 0.1 ******
+2026-09-04 00:05:45,137 INFO    : ****** one_batch_per_Epoch : False ******
+2026-09-04 00:05:45,137 INFO    : ****** FL_drop_rate : 0 ******
+2026-09-04 00:05:45,137 INFO    : ****** FL_fraction : 0.1 ******
+2026-09-04 00:05:45,137 INFO    : ****** tolerance_τ : 50 ******
+2026-09-04 00:05:45,137 INFO    : ****** log_path : ./log_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/1.txt ******
+2026-09-04 00:05:45,137 INFO    : ****** basic_path : ./result_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients ******
+2026-09-04 00:05:45,137 INFO    : ****** result_path : ./result_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/1.txt ******
+2026-09-04 00:05:45,137 INFO    : ****** model_path : ./save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients ******
+2026-09-04 00:05:45,137 INFO    : ****** Experiment_NO : 1 ******
+2026-09-04 00:05:45,137 INFO    : -----------------------------------------------------------------------------
+[TensorBoard] Logs saved to: ./tensorboard_log/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/1_20260904_000545
+[TensorBoard] To view: tensorboard --logdir=./tensorboard_log/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/1_20260904_000545
+[TensorBoard] Or view all experiments: tensorboard --logdir=./tb_logs
+2026-09-04 00:05:45,137 INFO    : TensorBoard logging initialized
+2026-09-04 00:05:45,137 INFO    : ~~~~~~ Algorithm: Federated Average ~~~~~~
+2026-09-04 00:05:45,151 INFO    : tail_index is : 2000000
+[Cache] No valid cache found for bios train; building cache before DataLoader workers start
+[Cache] Building text cache to: dataset/cache/bios/train (257478 samples)
+[Cache] Text cache built successfully (batch mode)
+[Cache] No valid cache found for bios test; building cache before DataLoader workers start
+[Cache] Building text cache to: dataset/cache/bios/test (99069 samples)
+[Cache] Text cache built successfully (batch mode)
+[PinMemory Check] System Info:
+  GPU Available: Yes (1 devices)
+  CPU Cores: 32
+  Total Memory: 123.33 GB
+  Used Memory: 19.38 GB (15.7%)
+  Available Memory: 103.94 GB
+[PinMemory Check] ✅ All checks passed, enabling pin_memory
+[Worker Check] Recommended num_workers: 16 (CPU cores: 32)
+
+[DataLoader Config] Final settings:
+  pin_memory: True
+  num_workers: 16
+  persistent_workers: True
+2026-09-04 00:07:40,520 INFO    : Model construction
+/home/ronnie/.config/superpowers/worktrees/fairness_fl_code/fix-repeats-dirichlet/tool/amp_utils.py:90: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  return torch.cuda.amp.GradScaler()
+2026-09-04 00:07:40,608 INFO    : Training process begin!
+2026-09-04 00:07:40,608 INFO    : Training Dataset Size: 257478; Client Datasets Size:[984, 21587, 7900, 14680, 51819, 2712, 39005, 5196, 18511, 6505, 35114, 1968, 5870, 6361, 1110, 18287, 9054, 501, 1372, 8942]
+2026-09-04 00:07:40,609 INFO    : Communication Round: 1; Select clients: [ 0 17]; Start Local Training!
+/home/ronnie/.config/superpowers/worktrees/fairness_fl_code/fix-repeats-dirichlet/tool/amp_utils.py:78: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+2026-09-04 00:07:53,071 INFO    : Communication Round: 1 / 50; Client: 0 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.021064987406134605
+2026-09-04 00:07:59,693 INFO    : Communication Round: 1 / 50; Client: 17 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.020894281566143036
+2026-09-04 00:07:59,947 INFO    : Communication Round 1 's Communication Cost: 1670.5898742675781 MB
+2026-09-04 00:07:59,947 INFO    : Parameter aggregation
+2026-09-04 00:07:59,989 INFO    : Update Global Model
+2026-09-04 00:08:00,204 INFO    : Global Model testing at Communication 1/ 50
+2026-09-04 00:08:00,204 INFO    : Total GPU seconds: 18.005310773849487, Avg GPU seconds over client: 0.9002655386924744
+2026-09-04 00:08:54,354 INFO    : ACC: 0.447, DEO: 0.105, SPD:0.112
+2026-09-04 00:08:55,220 INFO    : Checkpoint saved at round boundary 1: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 00:08:55,220 INFO    : Communication Round: 2; Select clients: [19 16]; Start Local Training!
+2026-09-04 00:10:03,128 INFO    : Communication Round: 2 / 50; Client: 19 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.019214564934372902
+2026-09-04 00:10:52,651 INFO    : Communication Round: 2 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012011672370135784
+2026-09-04 00:10:52,955 INFO    : Communication Round 2 's Communication Cost: 3341.1797485351562 MB
+2026-09-04 00:10:52,955 INFO    : Parameter aggregation
+2026-09-04 00:10:52,998 INFO    : Update Global Model
+2026-09-04 00:10:53,140 INFO    : Global Model testing at Communication 2/ 50
+2026-09-04 00:10:53,140 INFO    : Total GPU seconds: 134.23490929603577, Avg GPU seconds over client: 6.711745464801789
+2026-09-04 00:11:31,943 INFO    : ACC: 0.541, DEO: 0.01, SPD:0.008
+2026-09-04 00:11:32,739 INFO    : Checkpoint saved at round boundary 2: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 00:11:32,739 INFO    : Communication Round: 3; Select clients: [10  7]; Start Local Training!
+2026-09-04 00:14:42,673 INFO    : Communication Round: 3 / 50; Client: 10 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.021541982889175415
+2026-09-04 00:15:11,497 INFO    : Communication Round: 3 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.022308770567178726
+2026-09-04 00:15:11,755 INFO    : Communication Round 3 's Communication Cost: 5011.769622802734 MB
+2026-09-04 00:15:11,755 INFO    : Parameter aggregation
+2026-09-04 00:15:11,796 INFO    : Update Global Model
+2026-09-04 00:15:11,937 INFO    : Global Model testing at Communication 3/ 50
+2026-09-04 00:15:11,937 INFO    : Total GPU seconds: 351.3592412471771, Avg GPU seconds over client: 17.567962062358855
+2026-09-04 00:15:50,596 INFO    : ACC: 0.593, DEO: 0.092, SPD:0.146
+2026-09-04 00:15:51,379 INFO    : Checkpoint saved at round boundary 3: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 00:15:51,380 INFO    : Communication Round: 4; Select clients: [ 0 18]; Start Local Training!
+2026-09-04 00:15:57,023 INFO    : Communication Round: 4 / 50; Client: 0 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.02182048372924328
+2026-09-04 00:16:04,936 INFO    : Communication Round: 4 / 50; Client: 18 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.021625010296702385
+2026-09-04 00:16:05,184 INFO    : Communication Round 4 's Communication Cost: 6682.3594970703125 MB
+2026-09-04 00:16:05,184 INFO    : Parameter aggregation
+2026-09-04 00:16:05,225 INFO    : Update Global Model
+2026-09-04 00:16:05,365 INFO    : Global Model testing at Communication 4/ 50
+2026-09-04 00:16:05,365 INFO    : Total GPU seconds: 364.1109368801117, Avg GPU seconds over client: 18.205546844005585
+2026-09-04 00:16:44,192 INFO    : ACC: 0.555, DEO: 0.22, SPD:0.204
+2026-09-04 00:16:45,004 INFO    : Checkpoint saved at round boundary 4: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 00:16:45,004 INFO    : Communication Round: 5; Select clients: [5 2]; Start Local Training!
+2026-09-04 00:17:00,007 INFO    : Communication Round: 5 / 50; Client: 5 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.020589064806699753
+2026-09-04 00:17:43,230 INFO    : Communication Round: 5 / 50; Client: 2 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.015102514065802097
+2026-09-04 00:17:43,522 INFO    : Communication Round 5 's Communication Cost: 8352.94937133789 MB
+2026-09-04 00:17:43,522 INFO    : Parameter aggregation
+2026-09-04 00:17:43,567 INFO    : Update Global Model
+2026-09-04 00:17:43,709 INFO    : Global Model testing at Communication 5/ 50
+2026-09-04 00:17:43,709 INFO    : Total GPU seconds: 421.41090989112854, Avg GPU seconds over client: 21.070545494556427
+2026-09-04 00:18:22,480 INFO    : ACC: 0.545, DEO: 0.0, SPD:0.0
+2026-09-04 00:18:23,236 INFO    : Checkpoint saved at round boundary 5: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 00:18:23,237 INFO    : Communication Round: 6; Select clients: [3 1]; Start Local Training!
+2026-09-04 00:19:42,871 INFO    : Communication Round: 6 / 50; Client: 3 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.017452480271458626
+2026-09-04 00:21:39,968 INFO    : Communication Round: 6 / 50; Client: 1 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.011332359164953232
+2026-09-04 00:21:40,321 INFO    : Communication Round 6 's Communication Cost: 10023.539245605469 MB
+2026-09-04 00:21:40,321 INFO    : Parameter aggregation
+2026-09-04 00:21:40,366 INFO    : Update Global Model
+2026-09-04 00:21:40,504 INFO    : Global Model testing at Communication 6/ 50
+2026-09-04 00:21:40,505 INFO    : Total GPU seconds: 616.7224097251892, Avg GPU seconds over client: 30.83612048625946
+2026-09-04 00:22:19,134 INFO    : ACC: 0.455, DEO: 0.0, SPD:0.0
+2026-09-04 00:22:19,903 INFO    : Checkpoint saved at round boundary 6: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 00:22:19,903 INFO    : Communication Round: 7; Select clients: [13 10]; Start Local Training!
+2026-09-04 00:22:54,577 INFO    : Communication Round: 7 / 50; Client: 13 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01669636182487011
+2026-09-04 00:26:04,490 INFO    : Communication Round: 7 / 50; Client: 10 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.020643869414925575
+2026-09-04 00:26:04,887 INFO    : Communication Round 7 's Communication Cost: 11694.129119873047 MB
+2026-09-04 00:26:04,887 INFO    : Parameter aggregation
+2026-09-04 00:26:04,926 INFO    : Update Global Model
+2026-09-04 00:26:05,057 INFO    : Global Model testing at Communication 7/ 50
+2026-09-04 00:26:05,058 INFO    : Total GPU seconds: 839.8822560310364, Avg GPU seconds over client: 41.99411280155182
+2026-09-04 00:26:43,695 INFO    : ACC: 0.686, DEO: 0.082, SPD:0.157
+2026-09-04 00:26:44,478 INFO    : Checkpoint saved at round boundary 7: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 00:26:44,478 INFO    : Communication Round: 8; Select clients: [17 18]; Start Local Training!
+2026-09-04 00:26:47,533 INFO    : Communication Round: 8 / 50; Client: 17 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.019140630960464478
+2026-09-04 00:26:55,413 INFO    : Communication Round: 8 / 50; Client: 18 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0186992846429348
+2026-09-04 00:26:55,625 INFO    : Communication Round 8 's Communication Cost: 13364.718994140625 MB
+2026-09-04 00:26:55,625 INFO    : Parameter aggregation
+2026-09-04 00:26:55,669 INFO    : Update Global Model
+2026-09-04 00:26:55,798 INFO    : Global Model testing at Communication 8/ 50
+2026-09-04 00:26:55,798 INFO    : Total GPU seconds: 850.0349478721619, Avg GPU seconds over client: 42.50174739360809
+2026-09-04 00:27:34,653 INFO    : ACC: 0.641, DEO: 0.14, SPD:0.147
+2026-09-04 00:27:35,437 INFO    : Checkpoint saved at round boundary 8: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 00:27:35,438 INFO    : Communication Round: 9; Select clients: [17 11]; Start Local Training!
+2026-09-04 00:27:38,514 INFO    : Communication Round: 9 / 50; Client: 17 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01624409854412079
+2026-09-04 00:27:49,714 INFO    : Communication Round: 9 / 50; Client: 11 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.019387036561965942
+2026-09-04 00:27:49,927 INFO    : Communication Round 9 's Communication Cost: 15035.308868408203 MB
+2026-09-04 00:27:49,927 INFO    : Parameter aggregation
+2026-09-04 00:27:49,970 INFO    : Update Global Model
+2026-09-04 00:27:50,100 INFO    : Global Model testing at Communication 9/ 50
+2026-09-04 00:27:50,100 INFO    : Total GPU seconds: 863.487147808075, Avg GPU seconds over client: 43.17435739040375
+2026-09-04 00:28:29,039 INFO    : ACC: 0.645, DEO: 0.037, SPD:0.124
+2026-09-04 00:28:29,832 INFO    : Checkpoint saved at round boundary 9: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 00:28:29,833 INFO    : Communication Round: 10; Select clients: [4 9]; Start Local Training!
+2026-09-04 00:34:32,893 INFO    : Communication Round: 10 / 50; Client: 4 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.018631145358085632
+2026-09-04 00:35:09,143 INFO    : Communication Round: 10 / 50; Client: 9 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.009915214031934738
+2026-09-04 00:35:09,388 INFO    : Communication Round 10 's Communication Cost: 16705.89874267578 MB
+2026-09-04 00:35:09,388 INFO    : Parameter aggregation
+2026-09-04 00:35:09,432 INFO    : Update Global Model
+2026-09-04 00:35:09,578 INFO    : Global Model testing at Communication 10/ 50
+2026-09-04 00:35:09,578 INFO    : Total GPU seconds: 1260.414587020874, Avg GPU seconds over client: 63.0207293510437
+2026-09-04 00:35:54,219 INFO    : ACC: 0.721, DEO: 0.032, SPD:0.11
+2026-09-04 00:35:55,060 INFO    : Checkpoint saved at round boundary 10: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 00:35:55,061 INFO    : Communication Round: 11; Select clients: [2 6]; Start Local Training!
+2026-09-04 00:37:01,948 INFO    : Communication Round: 11 / 50; Client: 2 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012036004103720188
+2026-09-04 00:42:35,877 INFO    : Communication Round: 11 / 50; Client: 6 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.017707988619804382
+2026-09-04 00:42:36,323 INFO    : Communication Round 11 's Communication Cost: 18376.48861694336 MB
+2026-09-04 00:42:36,323 INFO    : Parameter aggregation
+2026-09-04 00:42:36,364 INFO    : Update Global Model
+2026-09-04 00:42:36,529 INFO    : Global Model testing at Communication 11/ 50
+2026-09-04 00:42:36,529 INFO    : Total GPU seconds: 1659.1720871925354, Avg GPU seconds over client: 82.95860435962678
+2026-09-04 00:43:21,745 INFO    : ACC: 0.687, DEO: 0.015, SPD:0.106
+2026-09-04 00:43:22,596 INFO    : Checkpoint saved at round boundary 11: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 00:43:22,596 INFO    : Communication Round: 12; Select clients: [14  3]; Start Local Training!
+2026-09-04 00:43:32,516 INFO    : Communication Round: 12 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012675938196480274
+2026-09-04 00:45:39,094 INFO    : Communication Round: 12 / 50; Client: 3 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014824137091636658
+2026-09-04 00:45:39,391 INFO    : Communication Round 12 's Communication Cost: 20047.078491210938 MB
+2026-09-04 00:45:39,391 INFO    : Parameter aggregation
+2026-09-04 00:45:39,434 INFO    : Update Global Model
+2026-09-04 00:45:39,580 INFO    : Global Model testing at Communication 12/ 50
+2026-09-04 00:45:39,580 INFO    : Total GPU seconds: 1794.421731710434, Avg GPU seconds over client: 89.7210865855217
+2026-09-04 00:46:24,824 INFO    : ACC: 0.636, DEO: 0.015, SPD:0.085
+2026-09-04 00:46:25,681 INFO    : Checkpoint saved at round boundary 12: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 00:46:25,681 INFO    : Communication Round: 13; Select clients: [9 8]; Start Local Training!
+2026-09-04 00:47:22,072 INFO    : Communication Round: 13 / 50; Client: 9 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0062001426704227924
+2026-09-04 00:50:01,453 INFO    : Communication Round: 13 / 50; Client: 8 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.003123773029074073
+2026-09-04 00:50:01,777 INFO    : Communication Round 13 's Communication Cost: 21717.668365478516 MB
+2026-09-04 00:50:01,777 INFO    : Parameter aggregation
+2026-09-04 00:50:01,820 INFO    : Update Global Model
+2026-09-04 00:50:01,962 INFO    : Global Model testing at Communication 13/ 50
+2026-09-04 00:50:01,962 INFO    : Total GPU seconds: 2008.7044603824615, Avg GPU seconds over client: 100.43522301912307
+2026-09-04 00:50:47,179 INFO    : ACC: 0.546, DEO: 0.0, SPD:0.002
+2026-09-04 00:50:48,019 INFO    : Checkpoint saved at round boundary 13: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 00:50:48,019 INFO    : Communication Round: 14; Select clients: [ 5 11]; Start Local Training!
+2026-09-04 00:51:11,670 INFO    : Communication Round: 14 / 50; Client: 5 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01661623828113079
+2026-09-04 00:51:29,165 INFO    : Communication Round: 14 / 50; Client: 11 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.002808020217344165
+2026-09-04 00:51:29,378 INFO    : Communication Round 14 's Communication Cost: 23388.258239746094 MB
+2026-09-04 00:51:29,378 INFO    : Parameter aggregation
+2026-09-04 00:51:29,420 INFO    : Update Global Model
+2026-09-04 00:51:29,567 INFO    : Global Model testing at Communication 14/ 50
+2026-09-04 00:51:29,567 INFO    : Total GPU seconds: 2048.925499200821, Avg GPU seconds over client: 102.44627496004105
+2026-09-04 00:52:14,874 INFO    : ACC: 0.547, DEO: 0.001, SPD:0.005
+2026-09-04 00:52:15,715 INFO    : Checkpoint saved at round boundary 14: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 00:52:15,716 INFO    : Communication Round: 15; Select clients: [14 16]; Start Local Training!
+2026-09-04 00:52:25,606 INFO    : Communication Round: 15 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.009364756755530834
+2026-09-04 00:53:43,805 INFO    : Communication Round: 15 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0016943331575021148
+2026-09-04 00:53:44,062 INFO    : Communication Round 15 's Communication Cost: 25058.848114013672 MB
+2026-09-04 00:53:44,062 INFO    : Parameter aggregation
+2026-09-04 00:53:44,108 INFO    : Update Global Model
+2026-09-04 00:53:44,247 INFO    : Global Model testing at Communication 15/ 50
+2026-09-04 00:53:44,247 INFO    : Total GPU seconds: 2135.962738275528, Avg GPU seconds over client: 106.7981369137764
+2026-09-04 00:54:29,525 INFO    : ACC: 0.545, DEO: 0.0, SPD:0.001
+2026-09-04 00:54:30,377 INFO    : Checkpoint saved at round boundary 15: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 00:54:30,377 INFO    : Communication Round: 16; Select clients: [ 6 11]; Start Local Training!
+bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory
+[TensorBoard] Support is available.
+[TensorBoard] After training, run: tensorboard --logdir=./tb_logs
+[TensorBoard] Or view all experiments: tensorboard --logdir=./tb_logs --bind_all
+2026-09-04 00:55:58,862 INFO    : Experiment 1/1 setup finish
+2026-09-04 00:55:58,862 INFO    : Parameter announcement
+2026-09-04 00:55:58,862 INFO    : ****** mode : train ******
+2026-09-04 00:55:58,862 INFO    : ****** algorithm : FedAvg ******
+2026-09-04 00:55:58,862 INFO    : ****** learning_rate : 5e-05 ******
+2026-09-04 00:55:58,862 INFO    : ****** optimize_method : sgd ******
+2026-09-04 00:55:58,862 INFO    : ****** dataset : bios ******
+2026-09-04 00:55:58,862 INFO    : ****** task : SENT_CLF ******
+2026-09-04 00:55:58,862 INFO    : ****** batch_size : 32 ******
+2026-09-04 00:55:58,862 INFO    : ****** test_batch_size : 512 ******
+2026-09-04 00:55:58,862 INFO    : ****** cuda : 0 ******
+2026-09-04 00:55:58,862 INFO    : ****** max_len : 32 ******
+2026-09-04 00:55:58,862 INFO    : ****** system_data_count : 2000000 ******
+2026-09-04 00:55:58,862 INFO    : ****** tb_monitor : {'gradient': False, 'embedding': False, 'fisher': False, 'sharpness': False, 'activation': False, 'update_stats': False, 'client_divergence': False} ******
+2026-09-04 00:55:58,862 INFO    : ****** tb_log_dir : None ******
+2026-09-04 00:55:58,862 INFO    : ****** model_heter_frac : 0 ******
+2026-09-04 00:55:58,862 INFO    : ****** split_strategy : Dirichlet05 ******
+2026-09-04 00:55:58,862 INFO    : ****** communication_round_I : 50 ******
+2026-09-04 00:55:58,862 INFO    : ****** algorithm_epoch_T : 1 ******
+2026-09-04 00:55:58,862 INFO    : ****** num_clients_K : 20 ******
+2026-09-04 00:55:58,862 INFO    : ****** start_exp : 1 ******
+2026-09-04 00:55:58,862 INFO    : ****** resume : True ******
+2026-09-04 00:55:58,862 INFO    : ****** exp_repeat_times : 3 ******
+2026-09-04 00:55:58,862 INFO    : ****** parallel_repeats : 1 ******
+2026-09-04 00:55:58,862 INFO    : ****** base_seed : 42 ******
+2026-09-04 00:55:58,862 INFO    : ****** use_amp : true ******
+2026-09-04 00:55:58,862 INFO    : ****** partition_cache_root : ./partition_cache ******
+2026-09-04 00:55:58,862 INFO    : ****** partition_min_size : 1 ******
+2026-09-04 00:55:58,862 INFO    : ****** partition_max_retries : 100 ******
+2026-09-04 00:55:58,862 INFO    : ****** partition_repair_policy : minimum_move_v1 ******
+2026-09-04 00:55:58,862 INFO    : ****** dataloader_num_workers : 8 ******
+2026-09-04 00:55:58,863 INFO    : ****** checkpoint_save_freq : 1 ******
+2026-09-04 00:55:58,863 INFO    : ****** checkpoint_keep_latest : 1 ******
+2026-09-04 00:55:58,863 INFO    : ****** final_artifact_policy : metrics_only ******
+2026-09-04 00:55:58,863 INFO    : ****** CUDA_VISIBLE_DEVICES : 0 ******
+2026-09-04 00:55:58,863 INFO    : ****** device : cuda ******
+2026-09-04 00:55:58,863 INFO    : ****** dataset_name : bios ******
+2026-09-04 00:55:58,863 INFO    : ****** hypothesis : BERTCLASSIFIER ******
+2026-09-04 00:55:58,863 INFO    : ****** classifier_type : linear ******
+2026-09-04 00:55:58,863 INFO    : ****** miu : 1 ******
+2026-09-04 00:55:58,863 INFO    : ****** γ_k_style : uniform_distribution ******
+2026-09-04 00:55:58,863 INFO    : ****** FedRenyi_λ : 1 ******
+2026-09-04 00:55:58,863 INFO    : ****** global_group_loss_gap : 0.1 ******
+2026-09-04 00:55:58,863 INFO    : ****** one_batch_per_Epoch : False ******
+2026-09-04 00:55:58,863 INFO    : ****** FL_drop_rate : 0 ******
+2026-09-04 00:55:58,863 INFO    : ****** FL_fraction : 0.1 ******
+2026-09-04 00:55:58,863 INFO    : ****** tolerance_τ : 50 ******
+2026-09-04 00:55:58,863 INFO    : ****** log_path : ./log_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/1.txt ******
+2026-09-04 00:55:58,863 INFO    : ****** basic_path : ./result_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients ******
+2026-09-04 00:55:58,863 INFO    : ****** result_path : ./result_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/1.txt ******
+2026-09-04 00:55:58,863 INFO    : ****** model_path : ./save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients ******
+2026-09-04 00:55:58,863 INFO    : ****** Experiment_NO : 1 ******
+2026-09-04 00:55:58,863 INFO    : -----------------------------------------------------------------------------
+[TensorBoard] Logs saved to: ./tensorboard_log/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/1_20260904_005558
+[TensorBoard] To view: tensorboard --logdir=./tensorboard_log/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/1_20260904_005558
+[TensorBoard] Or view all experiments: tensorboard --logdir=./tb_logs
+2026-09-04 00:55:58,863 INFO    : TensorBoard logging initialized
+2026-09-04 00:55:58,863 INFO    : ~~~~~~ Algorithm: Federated Average ~~~~~~
+2026-09-04 00:55:58,877 INFO    : tail_index is : 2000000
+[Cache] Loading bios train from cache: dataset/cache/bios/train
+[Cache] Loading bios test from cache: dataset/cache/bios/test
+[PinMemory Check] System Info:
+  GPU Available: Yes (1 devices)
+  CPU Cores: 32
+  Total Memory: 123.33 GB
+  Used Memory: 29.58 GB (24.0%)
+  Available Memory: 93.75 GB
+[PinMemory Check] ✅ All checks passed, enabling pin_memory
+[Worker Check] Recommended num_workers: 16 (CPU cores: 32)
+
+[DataLoader Config] Final settings:
+  pin_memory: True
+  num_workers: 16
+  persistent_workers: True
+2026-09-04 00:56:02,230 INFO    : Model construction
+2026-09-04 00:56:02,348 INFO    : Successfully loaded checkpoint from save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+/home/ronnie/.config/superpowers/worktrees/fairness_fl_code/fix-repeats-dirichlet/tool/amp_utils.py:90: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  return torch.cuda.amp.GradScaler()
+2026-09-04 00:56:02,468 INFO    : Training process begin!
+2026-09-04 00:56:02,468 INFO    : Training Dataset Size: 257478; Client Datasets Size:[984, 21587, 7900, 14680, 51819, 2712, 39005, 5196, 18511, 6505, 35114, 1968, 5870, 6361, 1110, 18287, 9054, 501, 1372, 8942]
+2026-09-04 00:56:02,469 INFO    : Communication Round: 16; Select clients: [ 6 11]; Start Local Training!
+/home/ronnie/.config/superpowers/worktrees/fairness_fl_code/fix-repeats-dirichlet/tool/amp_utils.py:78: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+2026-09-04 00:56:35,488 INFO    : Communication Round: 16 / 50; Client: 6 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.018055398017168045
+2026-09-04 00:56:37,861 INFO    : Communication Round: 16 / 50; Client: 11 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0025636423379182816
+2026-09-04 00:56:38,078 INFO    : Communication Round 16 's Communication Cost: 26729.43798828125 MB
+2026-09-04 00:56:38,080 INFO    : Parameter aggregation
+2026-09-04 00:56:38,132 INFO    : Update Global Model
+2026-09-04 00:56:38,251 INFO    : Global Model testing at Communication 16/ 50
+2026-09-04 00:56:38,251 INFO    : Total GPU seconds: 2170.132433652878, Avg GPU seconds over client: 108.5066216826439
+2026-09-04 00:57:08,568 INFO    : ACC: 0.723, DEO: 0.015, SPD:0.1
+2026-09-04 00:57:09,240 INFO    : Checkpoint saved at round boundary 16: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 00:57:09,240 INFO    : Communication Round: 17; Select clients: [14  7]; Start Local Training!
+2026-09-04 00:57:10,480 INFO    : Communication Round: 17 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012548521161079407
+2026-09-04 00:57:15,498 INFO    : Communication Round: 17 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.015864647924900055
+2026-09-04 00:57:15,775 INFO    : Communication Round 17 's Communication Cost: 28400.027862548828 MB
+2026-09-04 00:57:15,775 INFO    : Parameter aggregation
+2026-09-04 00:57:15,821 INFO    : Update Global Model
+2026-09-04 00:57:15,952 INFO    : Global Model testing at Communication 17/ 50
+2026-09-04 00:57:15,952 INFO    : Total GPU seconds: 2175.7444846630096, Avg GPU seconds over client: 108.78722423315048
+2026-09-04 00:57:46,440 INFO    : ACC: 0.742, DEO: 0.015, SPD:0.082
+2026-09-04 00:57:47,140 INFO    : Checkpoint saved at round boundary 17: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 00:57:47,140 INFO    : Communication Round: 18; Select clients: [7 3]; Start Local Training!
+2026-09-04 00:57:52,061 INFO    : Communication Round: 18 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014800796285271645
+2026-09-04 01:00:12,594 INFO    : Communication Round: 18 / 50; Client: 3 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014534998685121536
+2026-09-04 01:00:12,922 INFO    : Communication Round 18 's Communication Cost: 30070.617736816406 MB
+2026-09-04 01:00:12,922 INFO    : Parameter aggregation
+2026-09-04 01:00:12,966 INFO    : Update Global Model
+2026-09-04 01:00:13,102 INFO    : Global Model testing at Communication 18/ 50
+2026-09-04 01:00:13,102 INFO    : Total GPU seconds: 2319.9062111377716, Avg GPU seconds over client: 115.99531055688858
+2026-09-04 01:00:43,797 INFO    : ACC: 0.72, DEO: 0.018, SPD:0.102
+2026-09-04 01:00:44,493 INFO    : Checkpoint saved at round boundary 18: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:00:44,493 INFO    : Communication Round: 19; Select clients: [8 7]; Start Local Training!
+2026-09-04 01:01:57,737 INFO    : Communication Round: 19 / 50; Client: 8 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0033456056844443083
+2026-09-04 01:02:55,545 INFO    : Communication Round: 19 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.015918012708425522
+2026-09-04 01:02:55,811 INFO    : Communication Round 19 's Communication Cost: 31741.207611083984 MB
+2026-09-04 01:02:55,812 INFO    : Parameter aggregation
+2026-09-04 01:02:55,856 INFO    : Update Global Model
+2026-09-04 01:02:55,993 INFO    : Global Model testing at Communication 19/ 50
+2026-09-04 01:02:55,993 INFO    : Total GPU seconds: 2449.6960709095, Avg GPU seconds over client: 122.484803545475
+2026-09-04 01:03:44,478 INFO    : ACC: 0.558, DEO: 0.003, SPD:0.018
+2026-09-04 01:03:45,210 INFO    : Checkpoint saved at round boundary 19: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:03:45,211 INFO    : Communication Round: 20; Select clients: [17  4]; Start Local Training!
+2026-09-04 01:03:45,922 INFO    : Communication Round: 20 / 50; Client: 17 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.057711947709321976
+2026-09-04 01:04:32,410 INFO    : Communication Round: 20 / 50; Client: 4 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.016273120418190956
+2026-09-04 01:04:32,867 INFO    : Communication Round 20 's Communication Cost: 33411.79748535156 MB
+2026-09-04 01:04:32,867 INFO    : Parameter aggregation
+2026-09-04 01:04:32,907 INFO    : Update Global Model
+2026-09-04 01:04:33,031 INFO    : Global Model testing at Communication 20/ 50
+2026-09-04 01:04:33,031 INFO    : Total GPU seconds: 2495.9040627479553, Avg GPU seconds over client: 124.79520313739776
+2026-09-04 01:05:03,714 INFO    : ACC: 0.757, DEO: 0.005, SPD:0.072
+2026-09-04 01:05:04,426 INFO    : Checkpoint saved at round boundary 20: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:05:04,427 INFO    : Communication Round: 21; Select clients: [13 14]; Start Local Training!
+2026-09-04 01:05:10,403 INFO    : Communication Round: 21 / 50; Client: 13 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013165361247956753
+2026-09-04 01:05:11,833 INFO    : Communication Round: 21 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.016312502324581146
+2026-09-04 01:05:12,046 INFO    : Communication Round 21 's Communication Cost: 35082.38735961914 MB
+2026-09-04 01:05:12,046 INFO    : Parameter aggregation
+2026-09-04 01:05:12,091 INFO    : Update Global Model
+2026-09-04 01:05:12,212 INFO    : Global Model testing at Communication 21/ 50
+2026-09-04 01:05:12,212 INFO    : Total GPU seconds: 2502.5526192188263, Avg GPU seconds over client: 125.12763096094132
+2026-09-04 01:05:42,957 INFO    : ACC: 0.737, DEO: 0.001, SPD:0.053
+2026-09-04 01:05:43,678 INFO    : Checkpoint saved at round boundary 21: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:05:43,678 INFO    : Communication Round: 22; Select clients: [ 4 19]; Start Local Training!
+2026-09-04 01:06:30,523 INFO    : Communication Round: 22 / 50; Client: 4 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014971047639846802
+2026-09-04 01:06:39,182 INFO    : Communication Round: 22 / 50; Client: 19 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012969612143933773
+2026-09-04 01:06:39,457 INFO    : Communication Round 22 's Communication Cost: 36752.97723388672 MB
+2026-09-04 01:06:39,457 INFO    : Parameter aggregation
+2026-09-04 01:06:39,500 INFO    : Update Global Model
+2026-09-04 01:06:39,621 INFO    : Global Model testing at Communication 22/ 50
+2026-09-04 01:06:39,621 INFO    : Total GPU seconds: 2556.717056274414, Avg GPU seconds over client: 127.8358528137207
+2026-09-04 01:07:10,362 INFO    : ACC: 0.762, DEO: 0.001, SPD:0.061
+2026-09-04 01:07:11,060 INFO    : Checkpoint saved at round boundary 22: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:07:11,060 INFO    : Communication Round: 23; Select clients: [ 2 13]; Start Local Training!
+2026-09-04 01:07:18,504 INFO    : Communication Round: 23 / 50; Client: 2 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.010576221160590649
+2026-09-04 01:07:24,713 INFO    : Communication Round: 23 / 50; Client: 13 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012517864815890789
+2026-09-04 01:07:24,959 INFO    : Communication Round 23 's Communication Cost: 38423.5671081543 MB
+2026-09-04 01:07:24,959 INFO    : Parameter aggregation
+2026-09-04 01:07:25,002 INFO    : Update Global Model
+2026-09-04 01:07:25,153 INFO    : Global Model testing at Communication 23/ 50
+2026-09-04 01:07:25,153 INFO    : Total GPU seconds: 2569.553005218506, Avg GPU seconds over client: 128.4776502609253
+2026-09-04 01:07:55,856 INFO    : ACC: 0.753, DEO: 0.009, SPD:0.081
+2026-09-04 01:07:56,554 INFO    : Checkpoint saved at round boundary 23: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:07:56,555 INFO    : Communication Round: 24; Select clients: [ 3 14]; Start Local Training!
+2026-09-04 01:08:09,925 INFO    : Communication Round: 24 / 50; Client: 3 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012983936816453934
+2026-09-04 01:08:11,428 INFO    : Communication Round: 24 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.011095377616584301
+2026-09-04 01:08:11,642 INFO    : Communication Round 24 's Communication Cost: 40094.156982421875 MB
+2026-09-04 01:08:11,642 INFO    : Parameter aggregation
+2026-09-04 01:08:11,685 INFO    : Update Global Model
+2026-09-04 01:08:11,825 INFO    : Global Model testing at Communication 24/ 50
+2026-09-04 01:08:11,825 INFO    : Total GPU seconds: 2583.5753836631775, Avg GPU seconds over client: 129.17876918315886
+2026-09-04 01:08:42,510 INFO    : ACC: 0.724, DEO: 0.014, SPD:0.091
+2026-09-04 01:08:43,219 INFO    : Checkpoint saved at round boundary 24: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:08:43,220 INFO    : Communication Round: 25; Select clients: [18 15]; Start Local Training!
+2026-09-04 01:08:44,726 INFO    : Communication Round: 25 / 50; Client: 18 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.018663836643099785
+2026-09-04 01:11:07,787 INFO    : Communication Round: 25 / 50; Client: 15 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012292301282286644
+2026-09-04 01:11:08,103 INFO    : Communication Round 25 's Communication Cost: 41764.74685668945 MB
+2026-09-04 01:11:08,103 INFO    : Parameter aggregation
+2026-09-04 01:11:08,145 INFO    : Update Global Model
+2026-09-04 01:11:08,275 INFO    : Global Model testing at Communication 25/ 50
+2026-09-04 01:11:08,276 INFO    : Total GPU seconds: 2727.053194284439, Avg GPU seconds over client: 136.35265971422194
+2026-09-04 01:11:38,948 INFO    : ACC: 0.722, DEO: 0.016, SPD:0.092
+2026-09-04 01:11:39,641 INFO    : Checkpoint saved at round boundary 25: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:11:39,642 INFO    : Communication Round: 26; Select clients: [5 7]; Start Local Training!
+2026-09-04 01:11:42,369 INFO    : Communication Round: 26 / 50; Client: 5 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.011701270937919617
+2026-09-04 01:11:47,419 INFO    : Communication Round: 26 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014926238916814327
+2026-09-04 01:11:47,648 INFO    : Communication Round 26 's Communication Cost: 43435.33673095703 MB
+2026-09-04 01:11:47,648 INFO    : Parameter aggregation
+2026-09-04 01:11:47,692 INFO    : Update Global Model
+2026-09-04 01:11:47,812 INFO    : Global Model testing at Communication 26/ 50
+2026-09-04 01:11:47,812 INFO    : Total GPU seconds: 2734.072240829468, Avg GPU seconds over client: 136.70361204147338
+2026-09-04 01:12:18,496 INFO    : ACC: 0.777, DEO: 0.015, SPD:0.085
+2026-09-04 01:12:19,200 INFO    : Checkpoint saved at round boundary 26: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:12:19,201 INFO    : Communication Round: 27; Select clients: [10  5]; Start Local Training!
+2026-09-04 01:12:50,926 INFO    : Communication Round: 27 / 50; Client: 10 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014470872469246387
+2026-09-04 01:12:53,988 INFO    : Communication Round: 27 / 50; Client: 5 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013370111584663391
+2026-09-04 01:12:54,217 INFO    : Communication Round 27 's Communication Cost: 45105.92660522461 MB
+2026-09-04 01:12:54,217 INFO    : Parameter aggregation
+2026-09-04 01:12:54,260 INFO    : Update Global Model
+2026-09-04 01:12:54,393 INFO    : Global Model testing at Communication 27/ 50
+2026-09-04 01:12:54,393 INFO    : Total GPU seconds: 2767.744349002838, Avg GPU seconds over client: 138.38721745014192
+2026-09-04 01:13:25,072 INFO    : ACC: 0.781, DEO: 0.015, SPD:0.085
+2026-09-04 01:13:25,781 INFO    : Checkpoint saved at round boundary 27: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:13:25,782 INFO    : Communication Round: 28; Select clients: [5 6]; Start Local Training!
+2026-09-04 01:13:28,507 INFO    : Communication Round: 28 / 50; Client: 5 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012418546713888645
+2026-09-04 01:14:03,843 INFO    : Communication Round: 28 / 50; Client: 6 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014210933819413185
+2026-09-04 01:14:04,288 INFO    : Communication Round 28 's Communication Cost: 46776.51647949219 MB
+2026-09-04 01:14:04,288 INFO    : Parameter aggregation
+2026-09-04 01:14:04,328 INFO    : Update Global Model
+2026-09-04 01:14:04,449 INFO    : Global Model testing at Communication 28/ 50
+2026-09-04 01:14:04,449 INFO    : Total GPU seconds: 2804.822813510895, Avg GPU seconds over client: 140.24114067554473
+2026-09-04 01:14:35,145 INFO    : ACC: 0.785, DEO: 0.016, SPD:0.085
+2026-09-04 01:14:35,846 INFO    : Checkpoint saved at round boundary 28: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:14:35,846 INFO    : Communication Round: 29; Select clients: [12  5]; Start Local Training!
+2026-09-04 01:14:41,441 INFO    : Communication Round: 29 / 50; Client: 12 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013770878314971924
+2026-09-04 01:14:44,354 INFO    : Communication Round: 29 / 50; Client: 5 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012108786031603813
+2026-09-04 01:14:44,574 INFO    : Communication Round 29 's Communication Cost: 48447.106353759766 MB
+2026-09-04 01:14:44,574 INFO    : Parameter aggregation
+2026-09-04 01:14:44,617 INFO    : Update Global Model
+2026-09-04 01:14:44,736 INFO    : Global Model testing at Communication 29/ 50
+2026-09-04 01:14:44,736 INFO    : Total GPU seconds: 2812.566403388977, Avg GPU seconds over client: 140.62832016944884
+2026-09-04 01:15:15,455 INFO    : ACC: 0.791, DEO: 0.013, SPD:0.078
+2026-09-04 01:15:16,175 INFO    : Checkpoint saved at round boundary 29: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:15:16,175 INFO    : Communication Round: 30; Select clients: [14 19]; Start Local Training!
+2026-09-04 01:15:17,457 INFO    : Communication Round: 30 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012498185969889164
+2026-09-04 01:15:25,966 INFO    : Communication Round: 30 / 50; Client: 19 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012126578949391842
+2026-09-04 01:15:26,227 INFO    : Communication Round 30 's Communication Cost: 50117.696228027344 MB
+2026-09-04 01:15:26,227 INFO    : Parameter aggregation
+2026-09-04 01:15:26,271 INFO    : Update Global Model
+2026-09-04 01:15:26,396 INFO    : Global Model testing at Communication 30/ 50
+2026-09-04 01:15:26,396 INFO    : Total GPU seconds: 2821.582122564316, Avg GPU seconds over client: 141.07910612821578
+2026-09-04 01:15:57,090 INFO    : ACC: 0.765, DEO: 0.005, SPD:0.047
+2026-09-04 01:15:57,801 INFO    : Checkpoint saved at round boundary 30: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:15:57,802 INFO    : Communication Round: 31; Select clients: [1 6]; Start Local Training!
+2026-09-04 01:16:17,448 INFO    : Communication Round: 31 / 50; Client: 1 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0036995576228946447
+2026-09-04 01:23:12,333 INFO    : Communication Round: 31 / 50; Client: 6 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01394798792898655
+2026-09-04 01:23:12,784 INFO    : Communication Round 31 's Communication Cost: 51788.28610229492 MB
+2026-09-04 01:23:12,784 INFO    : Parameter aggregation
+2026-09-04 01:23:12,824 INFO    : Update Global Model
+2026-09-04 01:23:12,951 INFO    : Global Model testing at Communication 31/ 50
+2026-09-04 01:23:12,951 INFO    : Total GPU seconds: 3254.300483226776, Avg GPU seconds over client: 162.71502416133882
+2026-09-04 01:23:48,946 INFO    : ACC: 0.763, DEO: 0.003, SPD:0.041
+2026-09-04 01:23:49,682 INFO    : Checkpoint saved at round boundary 31: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:23:49,683 INFO    : Communication Round: 32; Select clients: [12 19]; Start Local Training!
+2026-09-04 01:23:55,296 INFO    : Communication Round: 32 / 50; Client: 12 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013208972290158272
+2026-09-04 01:24:03,817 INFO    : Communication Round: 32 / 50; Client: 19 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.011520479805767536
+2026-09-04 01:24:04,087 INFO    : Communication Round 32 's Communication Cost: 53458.8759765625 MB
+2026-09-04 01:24:04,087 INFO    : Parameter aggregation
+2026-09-04 01:24:04,134 INFO    : Update Global Model
+2026-09-04 01:24:04,264 INFO    : Global Model testing at Communication 32/ 50
+2026-09-04 01:24:04,264 INFO    : Total GPU seconds: 3267.5723423957825, Avg GPU seconds over client: 163.3786171197891
+2026-09-04 01:24:34,985 INFO    : ACC: 0.776, DEO: 0.005, SPD:0.049
+2026-09-04 01:24:35,740 INFO    : Checkpoint saved at round boundary 32: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:24:35,740 INFO    : Communication Round: 33; Select clients: [16 14]; Start Local Training!
+2026-09-04 01:24:44,149 INFO    : Communication Round: 33 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.005895107518881559
+2026-09-04 01:24:45,610 INFO    : Communication Round: 33 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01650647632777691
+2026-09-04 01:24:45,824 INFO    : Communication Round 33 's Communication Cost: 55129.46585083008 MB
+2026-09-04 01:24:45,824 INFO    : Parameter aggregation
+2026-09-04 01:24:45,868 INFO    : Update Global Model
+2026-09-04 01:24:46,003 INFO    : Global Model testing at Communication 33/ 50
+2026-09-04 01:24:46,003 INFO    : Total GPU seconds: 3276.620700120926, Avg GPU seconds over client: 163.8310350060463
+2026-09-04 01:25:16,709 INFO    : ACC: 0.606, DEO: 0.004, SPD:0.029
+2026-09-04 01:25:17,459 INFO    : Checkpoint saved at round boundary 33: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:25:17,459 INFO    : Communication Round: 34; Select clients: [10 14]; Start Local Training!
+2026-09-04 01:28:19,851 INFO    : Communication Round: 34 / 50; Client: 10 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014153149910271168
+2026-09-04 01:28:27,888 INFO    : Communication Round: 34 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.007910902611911297
+2026-09-04 01:28:28,100 INFO    : Communication Round 34 's Communication Cost: 56800.055725097656 MB
+2026-09-04 01:28:28,100 INFO    : Parameter aggregation
+2026-09-04 01:28:28,143 INFO    : Update Global Model
+2026-09-04 01:28:28,263 INFO    : Global Model testing at Communication 34/ 50
+2026-09-04 01:28:28,263 INFO    : Total GPU seconds: 3465.4817271232605, Avg GPU seconds over client: 173.27408635616302
+2026-09-04 01:29:16,148 INFO    : ACC: 0.801, DEO: 0.016, SPD:0.082
+2026-09-04 01:29:16,992 INFO    : Checkpoint saved at round boundary 34: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:29:16,992 INFO    : Communication Round: 35; Select clients: [10 19]; Start Local Training!
+2026-09-04 01:32:00,741 INFO    : Communication Round: 35 / 50; Client: 10 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013295530341565609
+2026-09-04 01:33:14,742 INFO    : Communication Round: 35 / 50; Client: 19 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.011732663959264755
+2026-09-04 01:33:14,992 INFO    : Communication Round 35 's Communication Cost: 58470.645599365234 MB
+2026-09-04 01:33:14,992 INFO    : Parameter aggregation
+2026-09-04 01:33:15,036 INFO    : Update Global Model
+2026-09-04 01:33:15,162 INFO    : Global Model testing at Communication 35/ 50
+2026-09-04 01:33:15,163 INFO    : Total GPU seconds: 3701.524256467819, Avg GPU seconds over client: 185.07621282339096
+2026-09-04 01:33:45,838 INFO    : ACC: 0.807, DEO: 0.013, SPD:0.072
+2026-09-04 01:33:46,571 INFO    : Checkpoint saved at round boundary 35: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:33:46,572 INFO    : Communication Round: 36; Select clients: [10  8]; Start Local Training!
+2026-09-04 01:34:18,399 INFO    : Communication Round: 36 / 50; Client: 10 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013144483789801598
+2026-09-04 01:34:35,712 INFO    : Communication Round: 36 / 50; Client: 8 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0029844087548553944
+2026-09-04 01:34:36,023 INFO    : Communication Round 36 's Communication Cost: 60141.23547363281 MB
+2026-09-04 01:34:36,023 INFO    : Parameter aggregation
+2026-09-04 01:34:36,067 INFO    : Update Global Model
+2026-09-04 01:34:36,199 INFO    : Global Model testing at Communication 36/ 50
+2026-09-04 01:34:36,199 INFO    : Total GPU seconds: 3749.386581659317, Avg GPU seconds over client: 187.46932908296586
+2026-09-04 01:35:06,846 INFO    : ACC: 0.731, DEO: 0.011, SPD:0.073
+2026-09-04 01:35:07,742 INFO    : Checkpoint saved at round boundary 36: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:35:07,743 INFO    : Communication Round: 37; Select clients: [ 7 11]; Start Local Training!
+2026-09-04 01:35:12,692 INFO    : Communication Round: 37 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013759875670075417
+2026-09-04 01:35:14,968 INFO    : Communication Round: 37 / 50; Client: 11 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.004667964298278093
+2026-09-04 01:35:15,197 INFO    : Communication Round 37 's Communication Cost: 61811.82534790039 MB
+2026-09-04 01:35:15,198 INFO    : Parameter aggregation
+2026-09-04 01:35:15,245 INFO    : Update Global Model
+2026-09-04 01:35:15,379 INFO    : Global Model testing at Communication 37/ 50
+2026-09-04 01:35:15,379 INFO    : Total GPU seconds: 3755.8104474544525, Avg GPU seconds over client: 187.79052237272262
+2026-09-04 01:35:46,088 INFO    : ACC: 0.81, DEO: 0.016, SPD:0.076
+2026-09-04 01:35:46,830 INFO    : Checkpoint saved at round boundary 37: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:35:46,830 INFO    : Communication Round: 38; Select clients: [ 2 12]; Start Local Training!
+2026-09-04 01:35:54,315 INFO    : Communication Round: 38 / 50; Client: 2 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.008164317347109318
+2026-09-04 01:36:00,056 INFO    : Communication Round: 38 / 50; Client: 12 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01274939440190792
+2026-09-04 01:36:00,291 INFO    : Communication Round 38 's Communication Cost: 63482.41522216797 MB
+2026-09-04 01:36:00,291 INFO    : Parameter aggregation
+2026-09-04 01:36:00,337 INFO    : Update Global Model
+2026-09-04 01:36:00,462 INFO    : Global Model testing at Communication 38/ 50
+2026-09-04 01:36:00,462 INFO    : Total GPU seconds: 3768.2022976875305, Avg GPU seconds over client: 188.41011488437653
+2026-09-04 01:36:54,648 INFO    : ACC: 0.775, DEO: 0.014, SPD:0.082
+2026-09-04 01:36:55,597 INFO    : Checkpoint saved at round boundary 38: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:36:55,598 INFO    : Communication Round: 39; Select clients: [ 3 13]; Start Local Training!
+2026-09-04 01:38:52,745 INFO    : Communication Round: 39 / 50; Client: 3 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.011344077996909618
+2026-09-04 01:38:58,927 INFO    : Communication Round: 39 / 50; Client: 13 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012248652055859566
+2026-09-04 01:38:59,176 INFO    : Communication Round 39 's Communication Cost: 65153.00509643555 MB
+2026-09-04 01:38:59,176 INFO    : Parameter aggregation
+2026-09-04 01:38:59,220 INFO    : Update Global Model
+2026-09-04 01:38:59,342 INFO    : Global Model testing at Communication 39/ 50
+2026-09-04 01:38:59,342 INFO    : Total GPU seconds: 3890.2641627788544, Avg GPU seconds over client: 194.51320813894273
+2026-09-04 01:39:30,001 INFO    : ACC: 0.803, DEO: 0.018, SPD:0.083
+2026-09-04 01:39:30,795 INFO    : Checkpoint saved at round boundary 39: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:39:30,795 INFO    : Communication Round: 40; Select clients: [15  3]; Start Local Training!
+2026-09-04 01:39:47,505 INFO    : Communication Round: 40 / 50; Client: 15 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.010937685146927834
+2026-09-04 01:40:57,293 INFO    : Communication Round: 40 / 50; Client: 3 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01137001533061266
+2026-09-04 01:40:57,565 INFO    : Communication Round 40 's Communication Cost: 66823.59497070312 MB
+2026-09-04 01:40:57,565 INFO    : Parameter aggregation
+2026-09-04 01:40:57,610 INFO    : Update Global Model
+2026-09-04 01:40:57,725 INFO    : Global Model testing at Communication 40/ 50
+2026-09-04 01:40:57,725 INFO    : Total GPU seconds: 3975.552349090576, Avg GPU seconds over client: 198.7776174545288
+2026-09-04 01:41:45,580 INFO    : ACC: 0.767, DEO: 0.014, SPD:0.082
+2026-09-04 01:41:46,441 INFO    : Checkpoint saved at round boundary 40: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:41:46,441 INFO    : Communication Round: 41; Select clients: [14 11]; Start Local Training!
+2026-09-04 01:41:54,105 INFO    : Communication Round: 41 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.008282225579023361
+2026-09-04 01:42:07,511 INFO    : Communication Round: 41 / 50; Client: 11 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.005380776710808277
+2026-09-04 01:42:07,738 INFO    : Communication Round 41 's Communication Cost: 68494.1848449707 MB
+2026-09-04 01:42:07,738 INFO    : Parameter aggregation
+2026-09-04 01:42:07,784 INFO    : Update Global Model
+2026-09-04 01:42:07,920 INFO    : Global Model testing at Communication 41/ 50
+2026-09-04 01:42:07,920 INFO    : Total GPU seconds: 3995.7159371376038, Avg GPU seconds over client: 199.78579685688018
+2026-09-04 01:42:55,818 INFO    : ACC: 0.714, DEO: 0.011, SPD:0.07
+2026-09-04 01:42:56,666 INFO    : Checkpoint saved at round boundary 41: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:42:56,667 INFO    : Communication Round: 42; Select clients: [12  9]; Start Local Training!
+2026-09-04 01:43:14,554 INFO    : Communication Round: 42 / 50; Client: 12 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014269010163843632
+2026-09-04 01:43:20,828 INFO    : Communication Round: 42 / 50; Client: 9 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.003681126981973648
+2026-09-04 01:43:21,066 INFO    : Communication Round 42 's Communication Cost: 70164.77471923828 MB
+2026-09-04 01:43:21,066 INFO    : Parameter aggregation
+2026-09-04 01:43:21,110 INFO    : Update Global Model
+2026-09-04 01:43:21,237 INFO    : Global Model testing at Communication 42/ 50
+2026-09-04 01:43:21,237 INFO    : Total GPU seconds: 4018.9675691127777, Avg GPU seconds over client: 200.94837845563887
+2026-09-04 01:44:02,308 INFO    : ACC: 0.754, DEO: 0.012, SPD:0.079
+2026-09-04 01:44:03,278 INFO    : Checkpoint saved at round boundary 42: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:44:03,278 INFO    : Communication Round: 43; Select clients: [4 9]; Start Local Training!
+2026-09-04 01:46:45,442 INFO    : Communication Round: 43 / 50; Client: 4 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012827928178012371
+2026-09-04 01:46:52,130 INFO    : Communication Round: 43 / 50; Client: 9 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.004005206283181906
+2026-09-04 01:46:52,386 INFO    : Communication Round 43 's Communication Cost: 71835.36459350586 MB
+2026-09-04 01:46:52,386 INFO    : Parameter aggregation
+2026-09-04 01:46:52,429 INFO    : Update Global Model
+2026-09-04 01:46:52,553 INFO    : Global Model testing at Communication 43/ 50
+2026-09-04 01:46:52,553 INFO    : Total GPU seconds: 4186.056683778763, Avg GPU seconds over client: 209.30283418893814
+2026-09-04 01:47:23,226 INFO    : ACC: 0.82, DEO: 0.012, SPD:0.067
+2026-09-04 01:47:24,137 INFO    : Checkpoint saved at round boundary 43: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:47:24,137 INFO    : Communication Round: 44; Select clients: [12 15]; Start Local Training!
+2026-09-04 01:47:29,697 INFO    : Communication Round: 44 / 50; Client: 12 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012148229405283928
+2026-09-04 01:49:00,960 INFO    : Communication Round: 44 / 50; Client: 15 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.010792480781674385
+2026-09-04 01:49:01,247 INFO    : Communication Round 44 's Communication Cost: 73505.95446777344 MB
+2026-09-04 01:49:01,247 INFO    : Parameter aggregation
+2026-09-04 01:49:01,289 INFO    : Update Global Model
+2026-09-04 01:49:01,404 INFO    : Global Model testing at Communication 44/ 50
+2026-09-04 01:49:01,404 INFO    : Total GPU seconds: 4281.777859687805, Avg GPU seconds over client: 214.08889298439027
+2026-09-04 01:50:02,664 INFO    : ACC: 0.799, DEO: 0.014, SPD:0.08
+2026-09-04 01:50:03,743 INFO    : Checkpoint saved at round boundary 44: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:50:03,743 INFO    : Communication Round: 45; Select clients: [12  0]; Start Local Training!
+2026-09-04 01:50:31,015 INFO    : Communication Round: 45 / 50; Client: 12 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012693810276687145
+2026-09-04 01:50:32,398 INFO    : Communication Round: 45 / 50; Client: 0 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014030078426003456
+2026-09-04 01:50:32,657 INFO    : Communication Round 45 's Communication Cost: 75176.54434204102 MB
+2026-09-04 01:50:32,657 INFO    : Parameter aggregation
+2026-09-04 01:50:32,701 INFO    : Update Global Model
+2026-09-04 01:50:32,823 INFO    : Global Model testing at Communication 45/ 50
+2026-09-04 01:50:32,823 INFO    : Total GPU seconds: 4309.506327867508, Avg GPU seconds over client: 215.4753163933754
+2026-09-04 01:51:03,504 INFO    : ACC: 0.815, DEO: 0.013, SPD:0.054
+2026-09-04 01:51:04,386 INFO    : Checkpoint saved at round boundary 45: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:51:04,387 INFO    : Communication Round: 46; Select clients: [7 3]; Start Local Training!
+2026-09-04 01:51:09,356 INFO    : Communication Round: 46 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.011061867699027061
+2026-09-04 01:52:06,901 INFO    : Communication Round: 46 / 50; Client: 3 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.011313148774206638
+2026-09-04 01:52:07,176 INFO    : Communication Round 46 's Communication Cost: 76847.1342163086 MB
+2026-09-04 01:52:07,176 INFO    : Parameter aggregation
+2026-09-04 01:52:07,220 INFO    : Update Global Model
+2026-09-04 01:52:07,339 INFO    : Global Model testing at Communication 46/ 50
+2026-09-04 01:52:07,340 INFO    : Total GPU seconds: 4371.018696546555, Avg GPU seconds over client: 218.55093482732772
+2026-09-04 01:53:08,581 INFO    : ACC: 0.809, DEO: 0.016, SPD:0.079
+2026-09-04 01:53:09,635 INFO    : Checkpoint saved at round boundary 46: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:53:09,635 INFO    : Communication Round: 47; Select clients: [11 18]; Start Local Training!
+2026-09-04 01:53:31,735 INFO    : Communication Round: 47 / 50; Client: 11 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.006925863213837147
+2026-09-04 01:53:47,379 INFO    : Communication Round: 47 / 50; Client: 18 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012813360430300236
+2026-09-04 01:53:47,596 INFO    : Communication Round 47 's Communication Cost: 78517.72409057617 MB
+2026-09-04 01:53:47,596 INFO    : Parameter aggregation
+2026-09-04 01:53:47,642 INFO    : Update Global Model
+2026-09-04 01:53:47,775 INFO    : Global Model testing at Communication 47/ 50
+2026-09-04 01:53:47,775 INFO    : Total GPU seconds: 4407.751840591431, Avg GPU seconds over client: 220.38759202957152
+2026-09-04 01:54:37,546 INFO    : ACC: 0.797, DEO: 0.015, SPD:0.081
+2026-09-04 01:54:38,417 INFO    : Checkpoint saved at round boundary 47: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:54:38,418 INFO    : Communication Round: 48; Select clients: [16  7]; Start Local Training!
+2026-09-04 01:56:18,076 INFO    : Communication Round: 48 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.003074970794841647
+2026-09-04 01:56:57,718 INFO    : Communication Round: 48 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012011364102363586
+2026-09-04 01:56:57,960 INFO    : Communication Round 48 's Communication Cost: 80188.31396484375 MB
+2026-09-04 01:56:57,960 INFO    : Parameter aggregation
+2026-09-04 01:56:58,005 INFO    : Update Global Model
+2026-09-04 01:56:58,132 INFO    : Global Model testing at Communication 48/ 50
+2026-09-04 01:56:58,132 INFO    : Total GPU seconds: 4545.7746052742, Avg GPU seconds over client: 227.28873026371002
+2026-09-04 01:57:28,794 INFO    : ACC: 0.716, DEO: 0.01, SPD:0.066
+2026-09-04 01:57:29,697 INFO    : Checkpoint saved at round boundary 48: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 01:57:29,698 INFO    : Communication Round: 49; Select clients: [7 4]; Start Local Training!
+2026-09-04 01:57:34,640 INFO    : Communication Round: 49 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013569536618888378
+2026-09-04 02:04:22,303 INFO    : Communication Round: 49 / 50; Client: 4 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012503138743340969
+2026-09-04 02:04:22,824 INFO    : Communication Round 49 's Communication Cost: 81858.90383911133 MB
+2026-09-04 02:04:22,824 INFO    : Parameter aggregation
+2026-09-04 02:04:22,863 INFO    : Update Global Model
+2026-09-04 02:04:22,985 INFO    : Global Model testing at Communication 49/ 50
+2026-09-04 02:04:22,985 INFO    : Total GPU seconds: 4956.608241558075, Avg GPU seconds over client: 247.83041207790376
+2026-09-04 02:05:15,061 INFO    : ACC: 0.823, DEO: 0.011, SPD:0.053
+2026-09-04 02:05:15,984 INFO    : Checkpoint saved at round boundary 49: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 02:05:15,984 INFO    : Communication Round: 50; Select clients: [2 6]; Start Local Training!
+2026-09-04 02:05:23,411 INFO    : Communication Round: 50 / 50; Client: 2 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.008351682685315609
+2026-09-04 02:05:58,768 INFO    : Communication Round: 50 / 50; Client: 6 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012413518503308296
+2026-09-04 02:05:59,217 INFO    : Communication Round 50 's Communication Cost: 83529.4937133789 MB
+2026-09-04 02:05:59,217 INFO    : Parameter aggregation
+2026-09-04 02:05:59,257 INFO    : Update Global Model
+2026-09-04 02:05:59,402 INFO    : Global Model testing at Communication 50/ 50
+2026-09-04 02:05:59,402 INFO    : Total GPU seconds: 4998.240647792816, Avg GPU seconds over client: 249.9120323896408
+2026-09-04 02:05:59,840 INFO    : Training finish, return the global model and resumable state.
+2026-09-04 02:06:00,245 INFO    : Checkpoint saved at round boundary 50: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_00/checkpoint_latest.pt
+2026-09-04 02:06:30,998 INFO    : tail_index is : 2000000
+[Cache] Loading bios train from cache: dataset/cache/bios/train
+[Cache] Loading bios test from cache: dataset/cache/bios/test
+2026-09-04 02:06:33,578 INFO    : Model construction
+/home/ronnie/.config/superpowers/worktrees/fairness_fl_code/fix-repeats-dirichlet/tool/amp_utils.py:90: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  return torch.cuda.amp.GradScaler()
+2026-09-04 02:06:33,686 INFO    : Training process begin!
+2026-09-04 02:06:33,686 INFO    : Training Dataset Size: 257478; Client Datasets Size:[14971, 13529, 9785, 4167, 90, 7842, 18394, 11038, 1498, 1461, 6866, 21639, 34116, 7325, 46133, 360, 16889, 4688, 599, 36088]
+2026-09-04 02:06:33,687 INFO    : Communication Round: 1; Select clients: [10 11]; Start Local Training!
+/home/ronnie/.config/superpowers/worktrees/fairness_fl_code/fix-repeats-dirichlet/tool/amp_utils.py:78: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+2026-09-04 02:06:40,311 INFO    : Communication Round: 1 / 50; Client: 10 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012304871343076229
+2026-09-04 02:07:00,184 INFO    : Communication Round: 1 / 50; Client: 11 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.006972426548600197
+2026-09-04 02:07:00,509 INFO    : Communication Round 1 's Communication Cost: 1670.5898742675781 MB
+2026-09-04 02:07:00,509 INFO    : Parameter aggregation
+2026-09-04 02:07:00,551 INFO    : Update Global Model
+2026-09-04 02:07:00,772 INFO    : Global Model testing at Communication 1/ 50
+2026-09-04 02:07:00,772 INFO    : Total GPU seconds: 25.345930814743042, Avg GPU seconds over client: 1.2672965407371521
+2026-09-04 02:07:31,539 INFO    : ACC: 0.455, DEO: 0.0, SPD:0.0
+2026-09-04 02:07:32,410 INFO    : Checkpoint saved at round boundary 1: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:07:32,411 INFO    : Communication Round: 2; Select clients: [4 7]; Start Local Training!
+2026-09-04 02:07:32,821 INFO    : Communication Round: 2 / 50; Client: 4 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0037804963067173958
+2026-09-04 02:07:43,168 INFO    : Communication Round: 2 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0032511854078620672
+2026-09-04 02:07:43,439 INFO    : Communication Round 2 's Communication Cost: 3341.1797485351562 MB
+2026-09-04 02:07:43,439 INFO    : Parameter aggregation
+2026-09-04 02:07:43,482 INFO    : Update Global Model
+2026-09-04 02:07:43,600 INFO    : Global Model testing at Communication 2/ 50
+2026-09-04 02:07:43,600 INFO    : Total GPU seconds: 35.184282302856445, Avg GPU seconds over client: 1.7592141151428222
+2026-09-04 02:08:14,350 INFO    : ACC: 0.455, DEO: 0.0, SPD:0.0
+2026-09-04 02:08:15,245 INFO    : Checkpoint saved at round boundary 2: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:08:15,245 INFO    : Communication Round: 3; Select clients: [13  4]; Start Local Training!
+2026-09-04 02:08:22,158 INFO    : Communication Round: 3 / 50; Client: 13 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.03986067697405815
+2026-09-04 02:08:22,846 INFO    : Communication Round: 3 / 50; Client: 4 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.002987207379192114
+2026-09-04 02:08:23,059 INFO    : Communication Round 3 's Communication Cost: 5011.769622802734 MB
+2026-09-04 02:08:23,059 INFO    : Parameter aggregation
+2026-09-04 02:08:23,103 INFO    : Update Global Model
+2026-09-04 02:08:23,222 INFO    : Global Model testing at Communication 3/ 50
+2026-09-04 02:08:23,223 INFO    : Total GPU seconds: 41.8034884929657, Avg GPU seconds over client: 2.0901744246482847
+2026-09-04 02:08:53,993 INFO    : ACC: 0.552, DEO: 0.009, SPD:0.017
+2026-09-04 02:08:54,945 INFO    : Checkpoint saved at round boundary 3: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:08:54,945 INFO    : Communication Round: 4; Select clients: [10 11]; Start Local Training!
+2026-09-04 02:09:01,375 INFO    : Communication Round: 4 / 50; Client: 10 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014177804812788963
+2026-09-04 02:13:44,467 INFO    : Communication Round: 4 / 50; Client: 11 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.008062852546572685
+2026-09-04 02:13:44,811 INFO    : Communication Round 4 's Communication Cost: 6682.3594970703125 MB
+2026-09-04 02:13:44,811 INFO    : Parameter aggregation
+2026-09-04 02:13:44,855 INFO    : Update Global Model
+2026-09-04 02:13:44,990 INFO    : Global Model testing at Communication 4/ 50
+2026-09-04 02:13:44,990 INFO    : Total GPU seconds: 329.8760747909546, Avg GPU seconds over client: 16.49380373954773
+2026-09-04 02:14:15,710 INFO    : ACC: 0.455, DEO: 0.0, SPD:0.0
+2026-09-04 02:14:16,562 INFO    : Checkpoint saved at round boundary 4: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:14:16,562 INFO    : Communication Round: 5; Select clients: [ 5 17]; Start Local Training!
+2026-09-04 02:14:23,901 INFO    : Communication Round: 5 / 50; Client: 5 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0026288412045687437
+2026-09-04 02:14:28,628 INFO    : Communication Round: 5 / 50; Client: 17 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.026535119861364365
+2026-09-04 02:14:28,860 INFO    : Communication Round 5 's Communication Cost: 8352.94937133789 MB
+2026-09-04 02:14:28,860 INFO    : Parameter aggregation
+2026-09-04 02:14:28,903 INFO    : Update Global Model
+2026-09-04 02:14:29,023 INFO    : Global Model testing at Communication 5/ 50
+2026-09-04 02:14:29,023 INFO    : Total GPU seconds: 340.9873604774475, Avg GPU seconds over client: 17.049368023872375
+2026-09-04 02:14:59,730 INFO    : ACC: 0.455, DEO: 0.0, SPD:0.0
+2026-09-04 02:15:00,536 INFO    : Checkpoint saved at round boundary 5: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:15:00,536 INFO    : Communication Round: 6; Select clients: [13  9]; Start Local Training!
+2026-09-04 02:15:07,445 INFO    : Communication Round: 6 / 50; Client: 13 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.030709031969308853
+2026-09-04 02:15:11,365 INFO    : Communication Round: 6 / 50; Client: 9 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.003120620036497712
+2026-09-04 02:15:11,596 INFO    : Communication Round 6 's Communication Cost: 10023.539245605469 MB
+2026-09-04 02:15:11,596 INFO    : Parameter aggregation
+2026-09-04 02:15:11,639 INFO    : Update Global Model
+2026-09-04 02:15:11,757 INFO    : Global Model testing at Communication 6/ 50
+2026-09-04 02:15:11,757 INFO    : Total GPU seconds: 350.6931173801422, Avg GPU seconds over client: 17.53465586900711
+2026-09-04 02:15:59,697 INFO    : ACC: 0.605, DEO: 0.032, SPD:0.085
+2026-09-04 02:16:00,673 INFO    : Checkpoint saved at round boundary 6: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:16:00,674 INFO    : Communication Round: 7; Select clients: [14  2]; Start Local Training!
+2026-09-04 02:18:23,489 INFO    : Communication Round: 7 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.020517658442258835
+2026-09-04 02:18:33,026 INFO    : Communication Round: 7 / 50; Client: 2 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.011981233023107052
+2026-09-04 02:18:33,282 INFO    : Communication Round 7 's Communication Cost: 11694.129119873047 MB
+2026-09-04 02:18:33,282 INFO    : Parameter aggregation
+2026-09-04 02:18:33,327 INFO    : Update Global Model
+2026-09-04 02:18:33,451 INFO    : Global Model testing at Communication 7/ 50
+2026-09-04 02:18:33,451 INFO    : Total GPU seconds: 501.1642026901245, Avg GPU seconds over client: 25.058210134506226
+2026-09-04 02:19:04,155 INFO    : ACC: 0.628, DEO: 0.007, SPD:0.065
+2026-09-04 02:19:04,954 INFO    : Checkpoint saved at round boundary 7: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:19:04,955 INFO    : Communication Round: 8; Select clients: [17 15]; Start Local Training!
+2026-09-04 02:19:29,106 INFO    : Communication Round: 8 / 50; Client: 17 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.020305883139371872
+2026-09-04 02:19:33,887 INFO    : Communication Round: 8 / 50; Client: 15 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.017592843621969223
+2026-09-04 02:19:34,092 INFO    : Communication Round 8 's Communication Cost: 13364.718994140625 MB
+2026-09-04 02:19:34,092 INFO    : Parameter aggregation
+2026-09-04 02:19:34,134 INFO    : Update Global Model
+2026-09-04 02:19:34,244 INFO    : Global Model testing at Communication 8/ 50
+2026-09-04 02:19:34,244 INFO    : Total GPU seconds: 529.1049587726593, Avg GPU seconds over client: 26.455247938632965
+2026-09-04 02:20:35,539 INFO    : ACC: 0.67, DEO: 0.053, SPD:0.112
+2026-09-04 02:20:36,538 INFO    : Checkpoint saved at round boundary 8: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:20:36,539 INFO    : Communication Round: 9; Select clients: [18 17]; Start Local Training!
+2026-09-04 02:20:43,698 INFO    : Communication Round: 9 / 50; Client: 18 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.020348254591226578
+2026-09-04 02:21:36,180 INFO    : Communication Round: 9 / 50; Client: 17 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.019441967830061913
+2026-09-04 02:21:36,406 INFO    : Communication Round 9 's Communication Cost: 15035.308868408203 MB
+2026-09-04 02:21:36,406 INFO    : Parameter aggregation
+2026-09-04 02:21:36,449 INFO    : Update Global Model
+2026-09-04 02:21:36,566 INFO    : Global Model testing at Communication 9/ 50
+2026-09-04 02:21:36,566 INFO    : Total GPU seconds: 587.5734384059906, Avg GPU seconds over client: 29.37867192029953
+2026-09-04 02:22:26,555 INFO    : ACC: 0.637, DEO: 0.081, SPD:0.105
+2026-09-04 02:22:27,342 INFO    : Checkpoint saved at round boundary 9: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:22:27,342 INFO    : Communication Round: 10; Select clients: [9 7]; Start Local Training!
+2026-09-04 02:22:29,000 INFO    : Communication Round: 10 / 50; Client: 9 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013410579413175583
+2026-09-04 02:22:39,506 INFO    : Communication Round: 10 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.006955218035727739
+2026-09-04 02:22:39,783 INFO    : Communication Round 10 's Communication Cost: 16705.89874267578 MB
+2026-09-04 02:22:39,792 INFO    : Parameter aggregation
+2026-09-04 02:22:39,836 INFO    : Update Global Model
+2026-09-04 02:22:39,952 INFO    : Global Model testing at Communication 10/ 50
+2026-09-04 02:22:39,952 INFO    : Total GPU seconds: 598.6720032691956, Avg GPU seconds over client: 29.93360016345978
+2026-09-04 02:23:10,683 INFO    : ACC: 0.456, DEO: 0.0, SPD:0.0
+2026-09-04 02:23:11,528 INFO    : Checkpoint saved at round boundary 10: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:23:11,528 INFO    : Communication Round: 11; Select clients: [15  9]; Start Local Training!
+2026-09-04 02:23:12,208 INFO    : Communication Round: 11 / 50; Client: 15 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0642518401145935
+2026-09-04 02:23:13,993 INFO    : Communication Round: 11 / 50; Client: 9 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.003229223657399416
+2026-09-04 02:23:14,211 INFO    : Communication Round 11 's Communication Cost: 18376.48861694336 MB
+2026-09-04 02:23:14,212 INFO    : Parameter aggregation
+2026-09-04 02:23:14,254 INFO    : Update Global Model
+2026-09-04 02:23:14,368 INFO    : Global Model testing at Communication 11/ 50
+2026-09-04 02:23:14,368 INFO    : Total GPU seconds: 600.3091330528259, Avg GPU seconds over client: 30.015456652641298
+2026-09-04 02:23:45,090 INFO    : ACC: 0.455, DEO: 0.0, SPD:0.0
+2026-09-04 02:23:45,888 INFO    : Checkpoint saved at round boundary 11: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:23:45,889 INFO    : Communication Round: 12; Select clients: [13 11]; Start Local Training!
+2026-09-04 02:23:52,760 INFO    : Communication Round: 12 / 50; Client: 13 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.024999145418405533
+2026-09-04 02:25:22,514 INFO    : Communication Round: 12 / 50; Client: 11 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0032642860896885395
+2026-09-04 02:25:22,843 INFO    : Communication Round 12 's Communication Cost: 20047.078491210938 MB
+2026-09-04 02:25:22,843 INFO    : Parameter aggregation
+2026-09-04 02:25:22,886 INFO    : Update Global Model
+2026-09-04 02:25:22,997 INFO    : Global Model testing at Communication 12/ 50
+2026-09-04 02:25:22,997 INFO    : Total GPU seconds: 695.7337293624878, Avg GPU seconds over client: 34.78668646812439
+2026-09-04 02:26:24,243 INFO    : ACC: 0.456, DEO: 0.001, SPD:0.0
+2026-09-04 02:26:25,227 INFO    : Checkpoint saved at round boundary 12: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:26:25,227 INFO    : Communication Round: 13; Select clients: [3 7]; Start Local Training!
+2026-09-04 02:26:55,924 INFO    : Communication Round: 13 / 50; Client: 3 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.028407448902726173
+2026-09-04 02:27:06,333 INFO    : Communication Round: 13 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.003183039603754878
+2026-09-04 02:27:06,608 INFO    : Communication Round 13 's Communication Cost: 21717.668365478516 MB
+2026-09-04 02:27:06,609 INFO    : Parameter aggregation
+2026-09-04 02:27:06,652 INFO    : Update Global Model
+2026-09-04 02:27:06,779 INFO    : Global Model testing at Communication 13/ 50
+2026-09-04 02:27:06,780 INFO    : Total GPU seconds: 735.7436106204987, Avg GPU seconds over client: 36.78718053102493
+2026-09-04 02:27:37,514 INFO    : ACC: 0.456, DEO: 0.001, SPD:0.0
+2026-09-04 02:27:38,333 INFO    : Checkpoint saved at round boundary 13: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:27:38,334 INFO    : Communication Round: 14; Select clients: [15 17]; Start Local Training!
+2026-09-04 02:27:39,046 INFO    : Communication Round: 14 / 50; Client: 15 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0643368735909462
+2026-09-04 02:27:43,819 INFO    : Communication Round: 14 / 50; Client: 17 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.022094018757343292
+2026-09-04 02:27:44,056 INFO    : Communication Round 14 's Communication Cost: 23388.258239746094 MB
+2026-09-04 02:27:44,056 INFO    : Parameter aggregation
+2026-09-04 02:27:44,100 INFO    : Update Global Model
+2026-09-04 02:27:44,225 INFO    : Global Model testing at Communication 14/ 50
+2026-09-04 02:27:44,225 INFO    : Total GPU seconds: 740.2338118553162, Avg GPU seconds over client: 37.01169059276581
+2026-09-04 02:28:14,972 INFO    : ACC: 0.507, DEO: 0.049, SPD:0.035
+2026-09-04 02:28:15,771 INFO    : Checkpoint saved at round boundary 14: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:28:15,771 INFO    : Communication Round: 15; Select clients: [11 18]; Start Local Training!
+2026-09-04 02:28:35,387 INFO    : Communication Round: 15 / 50; Client: 11 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.004067765083163977
+2026-09-04 02:28:36,518 INFO    : Communication Round: 15 / 50; Client: 18 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.02549293451011181
+2026-09-04 02:28:36,740 INFO    : Communication Round 15 's Communication Cost: 25058.848114013672 MB
+2026-09-04 02:28:36,740 INFO    : Parameter aggregation
+2026-09-04 02:28:36,784 INFO    : Update Global Model
+2026-09-04 02:28:36,908 INFO    : Global Model testing at Communication 15/ 50
+2026-09-04 02:28:36,908 INFO    : Total GPU seconds: 759.913861989975, Avg GPU seconds over client: 37.99569309949875
+2026-09-04 02:29:07,656 INFO    : ACC: 0.455, DEO: 0.0, SPD:0.0
+2026-09-04 02:29:08,425 INFO    : Checkpoint saved at round boundary 15: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:29:08,426 INFO    : Communication Round: 16; Select clients: [16  1]; Start Local Training!
+2026-09-04 02:29:23,844 INFO    : Communication Round: 16 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01939566433429718
+2026-09-04 02:29:36,339 INFO    : Communication Round: 16 / 50; Client: 1 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013308198191225529
+2026-09-04 02:29:36,618 INFO    : Communication Round 16 's Communication Cost: 26729.43798828125 MB
+2026-09-04 02:29:36,618 INFO    : Parameter aggregation
+2026-09-04 02:29:36,662 INFO    : Update Global Model
+2026-09-04 02:29:36,780 INFO    : Global Model testing at Communication 16/ 50
+2026-09-04 02:29:36,780 INFO    : Total GPU seconds: 786.7150571346283, Avg GPU seconds over client: 39.33575285673142
+2026-09-04 02:30:07,556 INFO    : ACC: 0.532, DEO: 0.054, SPD:0.042
+2026-09-04 02:30:08,378 INFO    : Checkpoint saved at round boundary 16: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:30:08,378 INFO    : Communication Round: 17; Select clients: [1 5]; Start Local Training!
+2026-09-04 02:30:20,812 INFO    : Communication Round: 17 / 50; Client: 1 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01227631513029337
+2026-09-04 02:30:28,371 INFO    : Communication Round: 17 / 50; Client: 5 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.004457097500562668
+2026-09-04 02:30:28,621 INFO    : Communication Round 17 's Communication Cost: 28400.027862548828 MB
+2026-09-04 02:30:28,621 INFO    : Parameter aggregation
+2026-09-04 02:30:28,666 INFO    : Update Global Model
+2026-09-04 02:30:28,787 INFO    : Global Model testing at Communication 17/ 50
+2026-09-04 02:30:28,787 INFO    : Total GPU seconds: 805.6929275989532, Avg GPU seconds over client: 40.28464637994766
+2026-09-04 02:30:59,534 INFO    : ACC: 0.464, DEO: 0.011, SPD:0.007
+2026-09-04 02:31:00,317 INFO    : Checkpoint saved at round boundary 17: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:31:00,317 INFO    : Communication Round: 18; Select clients: [16  0]; Start Local Training!
+2026-09-04 02:32:08,018 INFO    : Communication Round: 18 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.017400402575731277
+2026-09-04 02:33:29,166 INFO    : Communication Round: 18 / 50; Client: 0 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01076613087207079
+2026-09-04 02:33:29,450 INFO    : Communication Round 18 's Communication Cost: 30070.617736816406 MB
+2026-09-04 02:33:29,450 INFO    : Parameter aggregation
+2026-09-04 02:33:29,494 INFO    : Update Global Model
+2026-09-04 02:33:29,618 INFO    : Global Model testing at Communication 18/ 50
+2026-09-04 02:33:29,618 INFO    : Total GPU seconds: 953.0935044288635, Avg GPU seconds over client: 47.65467522144318
+2026-09-04 02:34:00,341 INFO    : ACC: 0.623, DEO: 0.006, SPD:0.037
+2026-09-04 02:34:01,198 INFO    : Checkpoint saved at round boundary 18: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:34:01,198 INFO    : Communication Round: 19; Select clients: [17 10]; Start Local Training!
+2026-09-04 02:34:05,643 INFO    : Communication Round: 19 / 50; Client: 17 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.019403627142310143
+2026-09-04 02:35:18,724 INFO    : Communication Round: 19 / 50; Client: 10 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0108913853764534
+2026-09-04 02:35:18,961 INFO    : Communication Round 19 's Communication Cost: 31741.207611083984 MB
+2026-09-04 02:35:18,961 INFO    : Parameter aggregation
+2026-09-04 02:35:19,004 INFO    : Update Global Model
+2026-09-04 02:35:19,113 INFO    : Global Model testing at Communication 19/ 50
+2026-09-04 02:35:19,113 INFO    : Total GPU seconds: 1029.406542301178, Avg GPU seconds over client: 51.4703271150589
+2026-09-04 02:36:20,415 INFO    : ACC: 0.565, DEO: 0.054, SPD:0.047
+2026-09-04 02:36:21,439 INFO    : Checkpoint saved at round boundary 19: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:36:21,439 INFO    : Communication Round: 20; Select clients: [15 11]; Start Local Training!
+2026-09-04 02:36:26,095 INFO    : Communication Round: 20 / 50; Client: 15 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.03884521499276161
+2026-09-04 02:37:11,742 INFO    : Communication Round: 20 / 50; Client: 11 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0035191199276596308
+2026-09-04 02:37:12,072 INFO    : Communication Round 20 's Communication Cost: 33411.79748535156 MB
+2026-09-04 02:37:12,072 INFO    : Parameter aggregation
+2026-09-04 02:37:12,115 INFO    : Update Global Model
+2026-09-04 02:37:12,244 INFO    : Global Model testing at Communication 20/ 50
+2026-09-04 02:37:12,244 INFO    : Total GPU seconds: 1078.4999361038208, Avg GPU seconds over client: 53.92499680519104
+2026-09-04 02:37:42,996 INFO    : ACC: 0.456, DEO: 0.001, SPD:0.0
+2026-09-04 02:37:43,831 INFO    : Checkpoint saved at round boundary 20: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:37:43,831 INFO    : Communication Round: 21; Select clients: [ 3 14]; Start Local Training!
+2026-09-04 02:37:47,853 INFO    : Communication Round: 21 / 50; Client: 3 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.031822770833969116
+2026-09-04 02:44:46,611 INFO    : Communication Round: 21 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.018573706969618797
+2026-09-04 02:44:47,078 INFO    : Communication Round 21 's Communication Cost: 35082.38735961914 MB
+2026-09-04 02:44:47,078 INFO    : Parameter aggregation
+2026-09-04 02:44:47,118 INFO    : Update Global Model
+2026-09-04 02:44:47,239 INFO    : Global Model testing at Communication 21/ 50
+2026-09-04 02:44:47,240 INFO    : Total GPU seconds: 1499.3214843273163, Avg GPU seconds over client: 74.96607421636581
+2026-09-04 02:45:19,831 INFO    : ACC: 0.734, DEO: 0.01, SPD:0.074
+2026-09-04 02:45:20,655 INFO    : Checkpoint saved at round boundary 21: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:45:20,656 INFO    : Communication Round: 22; Select clients: [7 2]; Start Local Training!
+2026-09-04 02:45:30,891 INFO    : Communication Round: 22 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.005757555831223726
+2026-09-04 02:45:40,258 INFO    : Communication Round: 22 / 50; Client: 2 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.009408760815858841
+2026-09-04 02:45:40,527 INFO    : Communication Round 22 's Communication Cost: 36752.97723388672 MB
+2026-09-04 02:45:40,527 INFO    : Parameter aggregation
+2026-09-04 02:45:40,572 INFO    : Update Global Model
+2026-09-04 02:45:40,695 INFO    : Global Model testing at Communication 22/ 50
+2026-09-04 02:45:40,695 INFO    : Total GPU seconds: 1517.8409945964813, Avg GPU seconds over client: 75.89204972982407
+2026-09-04 02:46:38,209 INFO    : ACC: 0.734, DEO: 0.016, SPD:0.06
+2026-09-04 02:46:39,245 INFO    : Checkpoint saved at round boundary 22: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:46:39,245 INFO    : Communication Round: 23; Select clients: [8 1]; Start Local Training!
+2026-09-04 02:46:55,948 INFO    : Communication Round: 23 / 50; Client: 8 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.017568761482834816
+2026-09-04 02:48:33,813 INFO    : Communication Round: 23 / 50; Client: 1 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.011537712067365646
+2026-09-04 02:48:34,098 INFO    : Communication Round 23 's Communication Cost: 38423.5671081543 MB
+2026-09-04 02:48:34,098 INFO    : Parameter aggregation
+2026-09-04 02:48:34,141 INFO    : Update Global Model
+2026-09-04 02:48:34,260 INFO    : Global Model testing at Communication 23/ 50
+2026-09-04 02:48:34,260 INFO    : Total GPU seconds: 1631.100635766983, Avg GPU seconds over client: 81.55503178834915
+2026-09-04 02:49:05,027 INFO    : ACC: 0.645, DEO: 0.025, SPD:0.043
+2026-09-04 02:49:05,897 INFO    : Checkpoint saved at round boundary 23: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:49:05,897 INFO    : Communication Round: 24; Select clients: [19 15]; Start Local Training!
+2026-09-04 02:53:52,077 INFO    : Communication Round: 24 / 50; Client: 19 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.016091857105493546
+2026-09-04 02:53:57,155 INFO    : Communication Round: 24 / 50; Client: 15 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.035484679043293
+2026-09-04 02:53:57,400 INFO    : Communication Round 24 's Communication Cost: 40094.156982421875 MB
+2026-09-04 02:53:57,400 INFO    : Parameter aggregation
+2026-09-04 02:53:57,445 INFO    : Update Global Model
+2026-09-04 02:53:57,581 INFO    : Global Model testing at Communication 24/ 50
+2026-09-04 02:53:57,581 INFO    : Total GPU seconds: 1920.4297597408295, Avg GPU seconds over client: 96.02148798704147
+2026-09-04 02:54:29,528 INFO    : ACC: 0.719, DEO: 0.0, SPD:0.087
+2026-09-04 02:54:30,370 INFO    : Checkpoint saved at round boundary 24: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:54:30,371 INFO    : Communication Round: 25; Select clients: [ 8 17]; Start Local Training!
+2026-09-04 02:54:32,137 INFO    : Communication Round: 25 / 50; Client: 8 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01224164292216301
+2026-09-04 02:54:36,904 INFO    : Communication Round: 25 / 50; Client: 17 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01677889935672283
+2026-09-04 02:54:37,152 INFO    : Communication Round 25 's Communication Cost: 41764.74685668945 MB
+2026-09-04 02:54:37,152 INFO    : Parameter aggregation
+2026-09-04 02:54:37,199 INFO    : Update Global Model
+2026-09-04 02:54:37,377 INFO    : Global Model testing at Communication 25/ 50
+2026-09-04 02:54:37,377 INFO    : Total GPU seconds: 1926.002280473709, Avg GPU seconds over client: 96.30011402368545
+2026-09-04 02:55:17,517 INFO    : ACC: 0.747, DEO: 0.002, SPD:0.08
+2026-09-04 02:55:18,449 INFO    : Checkpoint saved at round boundary 25: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 02:55:18,450 INFO    : Communication Round: 26; Select clients: [1 4]; Start Local Training!
+2026-09-04 02:59:03,770 INFO    : Communication Round: 26 / 50; Client: 1 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.011418601498007774
+2026-09-04 02:59:07,432 INFO    : Communication Round: 26 / 50; Client: 4 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01677517592906952
+2026-09-04 02:59:07,643 INFO    : Communication Round 26 's Communication Cost: 43435.33673095703 MB
+2026-09-04 02:59:07,643 INFO    : Parameter aggregation
+2026-09-04 02:59:07,686 INFO    : Update Global Model
+2026-09-04 02:59:07,798 INFO    : Global Model testing at Communication 26/ 50
+2026-09-04 02:59:07,798 INFO    : Total GPU seconds: 2153.39275097847, Avg GPU seconds over client: 107.66963754892349
+2026-09-04 03:00:55,218 INFO    : ACC: 0.639, DEO: 0.036, SPD:0.043
+2026-09-04 03:00:56,591 INFO    : Checkpoint saved at round boundary 26: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:00:56,591 INFO    : Communication Round: 27; Select clients: [ 7 17]; Start Local Training!
+2026-09-04 03:02:38,105 INFO    : Communication Round: 27 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.003366370452567935
+2026-09-04 03:02:42,978 INFO    : Communication Round: 27 / 50; Client: 17 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01640893891453743
+2026-09-04 03:02:43,225 INFO    : Communication Round 27 's Communication Cost: 45105.92660522461 MB
+2026-09-04 03:02:43,226 INFO    : Parameter aggregation
+2026-09-04 03:02:43,274 INFO    : Update Global Model
+2026-09-04 03:02:43,400 INFO    : Global Model testing at Communication 27/ 50
+2026-09-04 03:02:43,400 INFO    : Total GPU seconds: 2258.444539785385, Avg GPU seconds over client: 112.92222698926926
+2026-09-04 03:03:14,190 INFO    : ACC: 0.542, DEO: 0.045, SPD:0.033
+2026-09-04 03:03:15,033 INFO    : Checkpoint saved at round boundary 27: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:03:15,033 INFO    : Communication Round: 28; Select clients: [ 8 18]; Start Local Training!
+2026-09-04 03:03:16,823 INFO    : Communication Round: 28 / 50; Client: 8 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.03306756168603897
+2026-09-04 03:03:17,909 INFO    : Communication Round: 28 / 50; Client: 18 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.03360148146748543
+2026-09-04 03:03:18,127 INFO    : Communication Round 28 's Communication Cost: 46776.51647949219 MB
+2026-09-04 03:03:18,127 INFO    : Parameter aggregation
+2026-09-04 03:03:18,173 INFO    : Update Global Model
+2026-09-04 03:03:18,289 INFO    : Global Model testing at Communication 28/ 50
+2026-09-04 03:03:18,289 INFO    : Total GPU seconds: 2260.3692450523376, Avg GPU seconds over client: 113.01846225261689
+2026-09-04 03:03:49,098 INFO    : ACC: 0.731, DEO: 0.001, SPD:0.056
+2026-09-04 03:03:49,916 INFO    : Checkpoint saved at round boundary 28: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:03:49,916 INFO    : Communication Round: 29; Select clients: [6 4]; Start Local Training!
+2026-09-04 03:04:06,942 INFO    : Communication Round: 29 / 50; Client: 6 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.008628757670521736
+2026-09-04 03:04:07,673 INFO    : Communication Round: 29 / 50; Client: 4 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.008489400148391724
+2026-09-04 03:04:07,897 INFO    : Communication Round 29 's Communication Cost: 48447.106353759766 MB
+2026-09-04 03:04:07,897 INFO    : Parameter aggregation
+2026-09-04 03:04:07,941 INFO    : Update Global Model
+2026-09-04 03:04:08,068 INFO    : Global Model testing at Communication 29/ 50
+2026-09-04 03:04:08,068 INFO    : Total GPU seconds: 2276.98762178421, Avg GPU seconds over client: 113.84938108921051
+2026-09-04 03:04:38,847 INFO    : ACC: 0.576, DEO: 0.003, SPD:0.025
+2026-09-04 03:04:39,663 INFO    : Checkpoint saved at round boundary 29: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:04:39,664 INFO    : Communication Round: 30; Select clients: [15  1]; Start Local Training!
+2026-09-04 03:04:40,384 INFO    : Communication Round: 30 / 50; Client: 15 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.005488917697221041
+2026-09-04 03:04:52,851 INFO    : Communication Round: 30 / 50; Client: 1 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014614724554121494
+2026-09-04 03:04:53,189 INFO    : Communication Round 30 's Communication Cost: 50117.696228027344 MB
+2026-09-04 03:04:53,189 INFO    : Parameter aggregation
+2026-09-04 03:04:53,233 INFO    : Update Global Model
+2026-09-04 03:04:53,350 INFO    : Global Model testing at Communication 30/ 50
+2026-09-04 03:04:53,351 INFO    : Total GPU seconds: 2289.1360771656036, Avg GPU seconds over client: 114.45680385828018
+2026-09-04 03:05:24,127 INFO    : ACC: 0.669, DEO: 0.022, SPD:0.04
+2026-09-04 03:05:25,031 INFO    : Checkpoint saved at round boundary 30: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:05:25,031 INFO    : Communication Round: 31; Select clients: [3 5]; Start Local Training!
+2026-09-04 03:05:29,111 INFO    : Communication Round: 31 / 50; Client: 3 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01840829849243164
+2026-09-04 03:05:36,661 INFO    : Communication Round: 31 / 50; Client: 5 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.003108783159404993
+2026-09-04 03:05:36,918 INFO    : Communication Round 31 's Communication Cost: 51788.28610229492 MB
+2026-09-04 03:05:36,918 INFO    : Parameter aggregation
+2026-09-04 03:05:36,961 INFO    : Update Global Model
+2026-09-04 03:05:37,076 INFO    : Global Model testing at Communication 31/ 50
+2026-09-04 03:05:37,076 INFO    : Total GPU seconds: 2299.7336809635162, Avg GPU seconds over client: 114.98668404817582
+2026-09-04 03:06:07,860 INFO    : ACC: 0.622, DEO: 0.036, SPD:0.038
+2026-09-04 03:06:08,697 INFO    : Checkpoint saved at round boundary 31: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:06:08,698 INFO    : Communication Round: 32; Select clients: [14  1]; Start Local Training!
+2026-09-04 03:08:56,617 INFO    : Communication Round: 32 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.015773417428135872
+2026-09-04 03:09:09,608 INFO    : Communication Round: 32 / 50; Client: 1 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01045272033661604
+2026-09-04 03:09:09,892 INFO    : Communication Round 32 's Communication Cost: 53458.8759765625 MB
+2026-09-04 03:09:09,892 INFO    : Parameter aggregation
+2026-09-04 03:09:09,937 INFO    : Update Global Model
+2026-09-04 03:09:10,065 INFO    : Global Model testing at Communication 32/ 50
+2026-09-04 03:09:10,065 INFO    : Total GPU seconds: 2478.796455383301, Avg GPU seconds over client: 123.93982276916503
+2026-09-04 03:09:40,856 INFO    : ACC: 0.761, DEO: 0.005, SPD:0.073
+2026-09-04 03:09:41,690 INFO    : Checkpoint saved at round boundary 32: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:09:41,690 INFO    : Communication Round: 33; Select clients: [18  8]; Start Local Training!
+2026-09-04 03:09:42,610 INFO    : Communication Round: 33 / 50; Client: 18 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01599891670048237
+2026-09-04 03:09:44,485 INFO    : Communication Round: 33 / 50; Client: 8 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.015061660669744015
+2026-09-04 03:09:44,720 INFO    : Communication Round 33 's Communication Cost: 55129.46585083008 MB
+2026-09-04 03:09:44,720 INFO    : Parameter aggregation
+2026-09-04 03:09:44,767 INFO    : Update Global Model
+2026-09-04 03:09:44,887 INFO    : Global Model testing at Communication 33/ 50
+2026-09-04 03:09:44,887 INFO    : Total GPU seconds: 2480.6597294807434, Avg GPU seconds over client: 124.03298647403717
+2026-09-04 03:10:15,730 INFO    : ACC: 0.755, DEO: 0.001, SPD:0.083
+2026-09-04 03:10:16,588 INFO    : Checkpoint saved at round boundary 33: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:10:16,588 INFO    : Communication Round: 34; Select clients: [19  6]; Start Local Training!
+2026-09-04 03:12:49,118 INFO    : Communication Round: 34 / 50; Client: 19 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014253963716328144
+2026-09-04 03:14:41,788 INFO    : Communication Round: 34 / 50; Client: 6 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.007328376639634371
+2026-09-04 03:14:42,079 INFO    : Communication Round 34 's Communication Cost: 56800.055725097656 MB
+2026-09-04 03:14:42,079 INFO    : Parameter aggregation
+2026-09-04 03:14:42,123 INFO    : Update Global Model
+2026-09-04 03:14:42,238 INFO    : Global Model testing at Communication 34/ 50
+2026-09-04 03:14:42,238 INFO    : Total GPU seconds: 2743.9190192222595, Avg GPU seconds over client: 137.19595096111297
+2026-09-04 03:15:43,716 INFO    : ACC: 0.698, DEO: 0.007, SPD:0.089
+2026-09-04 03:15:44,764 INFO    : Checkpoint saved at round boundary 34: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:15:44,764 INFO    : Communication Round: 35; Select clients: [16 19]; Start Local Training!
+2026-09-04 03:16:01,015 INFO    : Communication Round: 35 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014476945623755455
+2026-09-04 03:16:33,934 INFO    : Communication Round: 35 / 50; Client: 19 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013980897143483162
+2026-09-04 03:16:34,358 INFO    : Communication Round 35 's Communication Cost: 58470.645599365234 MB
+2026-09-04 03:16:34,358 INFO    : Parameter aggregation
+2026-09-04 03:16:34,403 INFO    : Update Global Model
+2026-09-04 03:16:34,531 INFO    : Global Model testing at Communication 35/ 50
+2026-09-04 03:16:34,532 INFO    : Total GPU seconds: 2791.6784570217133, Avg GPU seconds over client: 139.58392285108567
+2026-09-04 03:17:05,378 INFO    : ACC: 0.772, DEO: 0.013, SPD:0.089
+2026-09-04 03:17:06,197 INFO    : Checkpoint saved at round boundary 35: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:17:06,197 INFO    : Communication Round: 36; Select clients: [7 1]; Start Local Training!
+2026-09-04 03:18:50,700 INFO    : Communication Round: 36 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.005152095574885607
+2026-09-04 03:19:34,883 INFO    : Communication Round: 36 / 50; Client: 1 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.010653560981154442
+2026-09-04 03:19:35,168 INFO    : Communication Round 36 's Communication Cost: 60141.23547363281 MB
+2026-09-04 03:19:35,168 INFO    : Parameter aggregation
+2026-09-04 03:19:35,213 INFO    : Update Global Model
+2026-09-04 03:19:35,333 INFO    : Global Model testing at Communication 36/ 50
+2026-09-04 03:19:35,333 INFO    : Total GPU seconds: 2938.9067430496216, Avg GPU seconds over client: 146.94533715248107
+2026-09-04 03:20:06,115 INFO    : ACC: 0.616, DEO: 0.029, SPD:0.032
+2026-09-04 03:20:06,944 INFO    : Checkpoint saved at round boundary 36: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:20:06,944 INFO    : Communication Round: 37; Select clients: [10  7]; Start Local Training!
+2026-09-04 03:20:30,894 INFO    : Communication Round: 37 / 50; Client: 10 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.002076877513900399
+2026-09-04 03:21:43,799 INFO    : Communication Round: 37 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0026458243373781443
+2026-09-04 03:21:44,066 INFO    : Communication Round 37 's Communication Cost: 61811.82534790039 MB
+2026-09-04 03:21:44,066 INFO    : Parameter aggregation
+2026-09-04 03:21:44,109 INFO    : Update Global Model
+2026-09-04 03:21:44,250 INFO    : Global Model testing at Communication 37/ 50
+2026-09-04 03:21:44,250 INFO    : Total GPU seconds: 3034.4122998714447, Avg GPU seconds over client: 151.72061499357224
+2026-09-04 03:22:32,091 INFO    : ACC: 0.507, DEO: 0.036, SPD:0.024
+2026-09-04 03:22:33,033 INFO    : Checkpoint saved at round boundary 37: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:22:33,033 INFO    : Communication Round: 38; Select clients: [17  8]; Start Local Training!
+2026-09-04 03:23:00,302 INFO    : Communication Round: 38 / 50; Client: 17 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.018718749284744263
+2026-09-04 03:23:02,243 INFO    : Communication Round: 38 / 50; Client: 8 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.03986010327935219
+2026-09-04 03:23:02,467 INFO    : Communication Round 38 's Communication Cost: 63482.41522216797 MB
+2026-09-04 03:23:02,467 INFO    : Parameter aggregation
+2026-09-04 03:23:02,511 INFO    : Update Global Model
+2026-09-04 03:23:02,638 INFO    : Global Model testing at Communication 38/ 50
+2026-09-04 03:23:02,638 INFO    : Total GPU seconds: 3062.5406992435455, Avg GPU seconds over client: 153.12703496217728
+2026-09-04 03:23:33,430 INFO    : ACC: 0.756, DEO: 0.007, SPD:0.057
+2026-09-04 03:23:34,263 INFO    : Checkpoint saved at round boundary 38: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:23:34,264 INFO    : Communication Round: 39; Select clients: [9 8]; Start Local Training!
+2026-09-04 03:23:35,941 INFO    : Communication Round: 39 / 50; Client: 9 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.006425751838833094
+2026-09-04 03:23:37,866 INFO    : Communication Round: 39 / 50; Client: 8 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.016586830839514732
+2026-09-04 03:23:38,105 INFO    : Communication Round 39 's Communication Cost: 65153.00509643555 MB
+2026-09-04 03:23:38,105 INFO    : Parameter aggregation
+2026-09-04 03:23:38,148 INFO    : Update Global Model
+2026-09-04 03:23:38,273 INFO    : Global Model testing at Communication 39/ 50
+2026-09-04 03:23:38,274 INFO    : Total GPU seconds: 3065.181676387787, Avg GPU seconds over client: 153.25908381938933
+2026-09-04 03:24:09,050 INFO    : ACC: 0.767, DEO: 0.009, SPD:0.067
+2026-09-04 03:24:09,934 INFO    : Checkpoint saved at round boundary 39: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:24:09,934 INFO    : Communication Round: 40; Select clients: [16  5]; Start Local Training!
+2026-09-04 03:24:27,242 INFO    : Communication Round: 40 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013291635550558567
+2026-09-04 03:25:55,013 INFO    : Communication Round: 40 / 50; Client: 5 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.004028302617371082
+2026-09-04 03:25:55,254 INFO    : Communication Round 40 's Communication Cost: 66823.59497070312 MB
+2026-09-04 03:25:55,254 INFO    : Parameter aggregation
+2026-09-04 03:25:55,297 INFO    : Update Global Model
+2026-09-04 03:25:55,410 INFO    : Global Model testing at Communication 40/ 50
+2026-09-04 03:25:55,410 INFO    : Total GPU seconds: 3168.8238232135773, Avg GPU seconds over client: 158.44119116067887
+2026-09-04 03:26:56,736 INFO    : ACC: 0.721, DEO: 0.011, SPD:0.025
+2026-09-04 03:26:57,793 INFO    : Checkpoint saved at round boundary 40: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:26:57,793 INFO    : Communication Round: 41; Select clients: [13 12]; Start Local Training!
+2026-09-04 03:27:18,471 INFO    : Communication Round: 41 / 50; Client: 13 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.011957897804677486
+2026-09-04 03:29:55,509 INFO    : Communication Round: 41 / 50; Client: 12 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.008649381808936596
+2026-09-04 03:29:55,907 INFO    : Communication Round 41 's Communication Cost: 68494.1848449707 MB
+2026-09-04 03:29:55,907 INFO    : Parameter aggregation
+2026-09-04 03:29:55,951 INFO    : Update Global Model
+2026-09-04 03:29:56,076 INFO    : Global Model testing at Communication 41/ 50
+2026-09-04 03:29:56,076 INFO    : Total GPU seconds: 3344.939163684845, Avg GPU seconds over client: 167.24695818424226
+2026-09-04 03:30:26,852 INFO    : ACC: 0.643, DEO: 0.004, SPD:0.066
+2026-09-04 03:30:27,667 INFO    : Checkpoint saved at round boundary 41: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:30:27,667 INFO    : Communication Round: 42; Select clients: [14 16]; Start Local Training!
+2026-09-04 03:33:15,672 INFO    : Communication Round: 42 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014463143423199654
+2026-09-04 03:33:31,380 INFO    : Communication Round: 42 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014271844178438187
+2026-09-04 03:33:31,682 INFO    : Communication Round 42 's Communication Cost: 70164.77471923828 MB
+2026-09-04 03:33:31,683 INFO    : Parameter aggregation
+2026-09-04 03:33:31,730 INFO    : Update Global Model
+2026-09-04 03:33:31,859 INFO    : Global Model testing at Communication 42/ 50
+2026-09-04 03:33:31,859 INFO    : Total GPU seconds: 3526.805515050888, Avg GPU seconds over client: 176.34027575254441
+2026-09-04 03:34:02,621 INFO    : ACC: 0.791, DEO: 0.013, SPD:0.077
+2026-09-04 03:34:03,425 INFO    : Checkpoint saved at round boundary 42: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:34:03,425 INFO    : Communication Round: 43; Select clients: [ 4 18]; Start Local Training!
+2026-09-04 03:34:03,864 INFO    : Communication Round: 43 / 50; Client: 4 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012084774672985077
+2026-09-04 03:34:04,913 INFO    : Communication Round: 43 / 50; Client: 18 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014153230004012585
+2026-09-04 03:34:05,142 INFO    : Communication Round 43 's Communication Cost: 71835.36459350586 MB
+2026-09-04 03:34:05,142 INFO    : Parameter aggregation
+2026-09-04 03:34:05,189 INFO    : Update Global Model
+2026-09-04 03:34:05,312 INFO    : Global Model testing at Communication 43/ 50
+2026-09-04 03:34:05,312 INFO    : Total GPU seconds: 3527.4193301200867, Avg GPU seconds over client: 176.37096650600432
+2026-09-04 03:34:36,123 INFO    : ACC: 0.793, DEO: 0.014, SPD:0.08
+2026-09-04 03:34:36,937 INFO    : Checkpoint saved at round boundary 43: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:34:36,937 INFO    : Communication Round: 44; Select clients: [10 14]; Start Local Training!
+2026-09-04 03:34:43,429 INFO    : Communication Round: 44 / 50; Client: 10 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.005046570673584938
+2026-09-04 03:35:25,213 INFO    : Communication Round: 44 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013808948919177055
+2026-09-04 03:35:25,690 INFO    : Communication Round 44 's Communication Cost: 73505.95446777344 MB
+2026-09-04 03:35:25,690 INFO    : Parameter aggregation
+2026-09-04 03:35:25,732 INFO    : Update Global Model
+2026-09-04 03:35:25,867 INFO    : Global Model testing at Communication 44/ 50
+2026-09-04 03:35:25,867 INFO    : Total GPU seconds: 3574.4049298763275, Avg GPU seconds over client: 178.72024649381638
+2026-09-04 03:35:56,607 INFO    : ACC: 0.796, DEO: 0.014, SPD:0.065
+2026-09-04 03:35:57,423 INFO    : Checkpoint saved at round boundary 44: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:35:57,424 INFO    : Communication Round: 45; Select clients: [10 16]; Start Local Training!
+2026-09-04 03:36:04,039 INFO    : Communication Round: 45 / 50; Client: 10 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.004180867224931717
+2026-09-04 03:37:43,691 INFO    : Communication Round: 45 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012564921751618385
+2026-09-04 03:37:43,982 INFO    : Communication Round 45 's Communication Cost: 75176.54434204102 MB
+2026-09-04 03:37:43,982 INFO    : Parameter aggregation
+2026-09-04 03:37:44,024 INFO    : Update Global Model
+2026-09-04 03:37:44,136 INFO    : Global Model testing at Communication 45/ 50
+2026-09-04 03:37:44,136 INFO    : Total GPU seconds: 3679.4377658367157, Avg GPU seconds over client: 183.9718882918358
+2026-09-04 03:38:45,423 INFO    : ACC: 0.745, DEO: 0.009, SPD:0.027
+2026-09-04 03:38:46,450 INFO    : Checkpoint saved at round boundary 45: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:38:46,451 INFO    : Communication Round: 46; Select clients: [10 14]; Start Local Training!
+2026-09-04 03:39:05,153 INFO    : Communication Round: 46 / 50; Client: 10 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.002886012429371476
+2026-09-04 03:41:54,070 INFO    : Communication Round: 46 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013537533581256866
+2026-09-04 03:41:54,567 INFO    : Communication Round 46 's Communication Cost: 76847.1342163086 MB
+2026-09-04 03:41:54,567 INFO    : Parameter aggregation
+2026-09-04 03:41:54,607 INFO    : Update Global Model
+2026-09-04 03:41:54,726 INFO    : Global Model testing at Communication 46/ 50
+2026-09-04 03:41:54,726 INFO    : Total GPU seconds: 3865.395405292511, Avg GPU seconds over client: 193.26977026462555
+2026-09-04 03:42:42,725 INFO    : ACC: 0.808, DEO: 0.012, SPD:0.061
+2026-09-04 03:42:43,710 INFO    : Checkpoint saved at round boundary 46: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:42:43,710 INFO    : Communication Round: 47; Select clients: [16  4]; Start Local Training!
+2026-09-04 03:44:35,049 INFO    : Communication Round: 47 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012085458263754845
+2026-09-04 03:44:36,353 INFO    : Communication Round: 47 / 50; Client: 4 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.008998625911772251
+2026-09-04 03:44:36,562 INFO    : Communication Round 47 's Communication Cost: 78517.72409057617 MB
+2026-09-04 03:44:36,562 INFO    : Parameter aggregation
+2026-09-04 03:44:36,606 INFO    : Update Global Model
+2026-09-04 03:44:36,719 INFO    : Global Model testing at Communication 47/ 50
+2026-09-04 03:44:36,719 INFO    : Total GPU seconds: 3976.6146895885468, Avg GPU seconds over client: 198.83073447942735
+2026-09-04 03:45:11,787 INFO    : ACC: 0.795, DEO: 0.012, SPD:0.051
+2026-09-04 03:45:12,603 INFO    : Checkpoint saved at round boundary 47: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:45:12,604 INFO    : Communication Round: 48; Select clients: [19  2]; Start Local Training!
+2026-09-04 03:45:45,268 INFO    : Communication Round: 48 / 50; Client: 19 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01253414899110794
+2026-09-04 03:45:54,667 INFO    : Communication Round: 48 / 50; Client: 2 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.008027655072510242
+2026-09-04 03:45:54,927 INFO    : Communication Round 48 's Communication Cost: 80188.31396484375 MB
+2026-09-04 03:45:54,927 INFO    : Parameter aggregation
+2026-09-04 03:45:54,976 INFO    : Update Global Model
+2026-09-04 03:45:55,098 INFO    : Global Model testing at Communication 48/ 50
+2026-09-04 03:45:55,099 INFO    : Total GPU seconds: 4017.253829717636, Avg GPU seconds over client: 200.8626914858818
+2026-09-04 03:46:25,862 INFO    : ACC: 0.774, DEO: 0.008, SPD:0.077
+2026-09-04 03:46:26,686 INFO    : Checkpoint saved at round boundary 48: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:46:26,687 INFO    : Communication Round: 49; Select clients: [1 7]; Start Local Training!
+2026-09-04 03:48:45,310 INFO    : Communication Round: 49 / 50; Client: 1 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.009828053414821625
+2026-09-04 03:49:27,787 INFO    : Communication Round: 49 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.005114907864481211
+2026-09-04 03:49:28,058 INFO    : Communication Round 49 's Communication Cost: 81858.90383911133 MB
+2026-09-04 03:49:28,058 INFO    : Parameter aggregation
+2026-09-04 03:49:28,104 INFO    : Update Global Model
+2026-09-04 03:49:28,242 INFO    : Global Model testing at Communication 49/ 50
+2026-09-04 03:49:28,243 INFO    : Total GPU seconds: 4196.751255273819, Avg GPU seconds over client: 209.83756276369095
+2026-09-04 03:50:29,678 INFO    : ACC: 0.67, DEO: 0.032, SPD:0.002
+2026-09-04 03:50:30,705 INFO    : Checkpoint saved at round boundary 49: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:50:30,705 INFO    : Communication Round: 50; Select clients: [18  0]; Start Local Training!
+2026-09-04 03:50:37,964 INFO    : Communication Round: 50 / 50; Client: 18 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.02550448477268219
+2026-09-04 03:51:49,354 INFO    : Communication Round: 50 / 50; Client: 0 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.005461394786834717
+2026-09-04 03:51:49,730 INFO    : Communication Round 50 's Communication Cost: 83529.4937133789 MB
+2026-09-04 03:51:49,730 INFO    : Parameter aggregation
+2026-09-04 03:51:49,775 INFO    : Update Global Model
+2026-09-04 03:51:49,941 INFO    : Global Model testing at Communication 50/ 50
+2026-09-04 03:51:49,941 INFO    : Total GPU seconds: 4274.111364364624, Avg GPU seconds over client: 213.7055682182312
+2026-09-04 03:51:50,670 INFO    : Training finish, return the global model and resumable state.
+2026-09-04 03:51:51,018 INFO    : Checkpoint saved at round boundary 50: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_01/checkpoint_latest.pt
+2026-09-04 03:52:52,457 INFO    : tail_index is : 2000000
+[Cache] Loading bios train from cache: dataset/cache/bios/train
+[Cache] Loading bios test from cache: dataset/cache/bios/test
+2026-09-04 03:52:54,632 INFO    : Model construction
+/home/ronnie/.config/superpowers/worktrees/fairness_fl_code/fix-repeats-dirichlet/tool/amp_utils.py:90: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  return torch.cuda.amp.GradScaler()
+2026-09-04 03:52:54,743 INFO    : Training process begin!
+2026-09-04 03:52:54,743 INFO    : Training Dataset Size: 257478; Client Datasets Size:[14102, 6992, 7228, 1863, 3764, 4441, 7325, 49145, 28311, 26892, 2584, 569, 8223, 6098, 15518, 23484, 6711, 8901, 20026, 15301]
+2026-09-04 03:52:54,744 INFO    : Communication Round: 1; Select clients: [10  1]; Start Local Training!
+/home/ronnie/.config/superpowers/worktrees/fairness_fl_code/fix-repeats-dirichlet/tool/amp_utils.py:78: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+2026-09-04 03:53:23,466 INFO    : Communication Round: 1 / 50; Client: 10 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.025345545262098312
+2026-09-04 03:54:38,681 INFO    : Communication Round: 1 / 50; Client: 1 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.022405995056033134
+2026-09-04 03:54:38,933 INFO    : Communication Round 1 's Communication Cost: 1670.5898742675781 MB
+2026-09-04 03:54:38,933 INFO    : Parameter aggregation
+2026-09-04 03:54:38,979 INFO    : Update Global Model
+2026-09-04 03:54:39,193 INFO    : Global Model testing at Communication 1/ 50
+2026-09-04 03:54:39,193 INFO    : Total GPU seconds: 102.60399556159973, Avg GPU seconds over client: 5.130199778079986
+2026-09-04 03:55:09,993 INFO    : ACC: 0.451, DEO: 0.004, SPD:-0.0
+2026-09-04 03:55:10,898 INFO    : Checkpoint saved at round boundary 1: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 03:55:10,898 INFO    : Communication Round: 2; Select clients: [16 13]; Start Local Training!
+2026-09-04 03:55:23,185 INFO    : Communication Round: 2 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012603282928466797
+2026-09-04 03:56:44,487 INFO    : Communication Round: 2 / 50; Client: 13 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014308273792266846
+2026-09-04 03:56:44,728 INFO    : Communication Round 2 's Communication Cost: 3341.1797485351562 MB
+2026-09-04 03:56:44,728 INFO    : Parameter aggregation
+2026-09-04 03:56:44,772 INFO    : Update Global Model
+2026-09-04 03:56:44,891 INFO    : Global Model testing at Communication 2/ 50
+2026-09-04 03:56:44,891 INFO    : Total GPU seconds: 194.87809205055237, Avg GPU seconds over client: 9.743904602527618
+2026-09-04 03:58:02,259 INFO    : ACC: 0.465, DEO: 0.019, SPD:-0.006
+2026-09-04 03:58:03,467 INFO    : Checkpoint saved at round boundary 2: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 03:58:03,468 INFO    : Communication Round: 3; Select clients: [18 14]; Start Local Training!
+2026-09-04 04:00:25,410 INFO    : Communication Round: 3 / 50; Client: 18 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014970005489885807
+2026-09-04 04:00:40,097 INFO    : Communication Round: 3 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.009433433413505554
+2026-09-04 04:00:40,408 INFO    : Communication Round 3 's Communication Cost: 5011.769622802734 MB
+2026-09-04 04:00:40,408 INFO    : Parameter aggregation
+2026-09-04 04:00:40,453 INFO    : Update Global Model
+2026-09-04 04:00:40,597 INFO    : Global Model testing at Communication 3/ 50
+2026-09-04 04:00:40,597 INFO    : Total GPU seconds: 349.8753743171692, Avg GPU seconds over client: 17.493768715858458
+2026-09-04 04:01:11,368 INFO    : ACC: 0.545, DEO: 0.0, SPD:0.0
+2026-09-04 04:01:12,230 INFO    : Checkpoint saved at round boundary 3: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:01:12,230 INFO    : Communication Round: 4; Select clients: [ 4 11]; Start Local Training!
+2026-09-04 04:01:15,942 INFO    : Communication Round: 4 / 50; Client: 4 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.029350636526942253
+2026-09-04 04:01:17,047 INFO    : Communication Round: 4 / 50; Client: 11 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.015529081225395203
+2026-09-04 04:01:17,274 INFO    : Communication Round 4 's Communication Cost: 6682.3594970703125 MB
+2026-09-04 04:01:17,274 INFO    : Parameter aggregation
+2026-09-04 04:01:17,317 INFO    : Update Global Model
+2026-09-04 04:01:17,435 INFO    : Global Model testing at Communication 4/ 50
+2026-09-04 04:01:17,435 INFO    : Total GPU seconds: 353.6608176231384, Avg GPU seconds over client: 17.68304088115692
+2026-09-04 04:02:05,023 INFO    : ACC: 0.545, DEO: 0.0, SPD:0.0
+2026-09-04 04:02:06,057 INFO    : Checkpoint saved at round boundary 4: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:02:06,058 INFO    : Communication Round: 5; Select clients: [ 2 16]; Start Local Training!
+2026-09-04 04:02:53,929 INFO    : Communication Round: 5 / 50; Client: 2 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.00912703201174736
+2026-09-04 04:03:38,647 INFO    : Communication Round: 5 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.022381052374839783
+2026-09-04 04:03:38,886 INFO    : Communication Round 5 's Communication Cost: 8352.94937133789 MB
+2026-09-04 04:03:38,886 INFO    : Parameter aggregation
+2026-09-04 04:03:38,930 INFO    : Update Global Model
+2026-09-04 04:03:39,042 INFO    : Global Model testing at Communication 5/ 50
+2026-09-04 04:03:39,042 INFO    : Total GPU seconds: 444.88519072532654, Avg GPU seconds over client: 22.244259536266327
+2026-09-04 04:04:26,954 INFO    : ACC: 0.551, DEO: 0.004, SPD:-0.002
+2026-09-04 04:04:27,974 INFO    : Checkpoint saved at round boundary 5: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:04:27,974 INFO    : Communication Round: 6; Select clients: [19  9]; Start Local Training!
+2026-09-04 04:07:50,113 INFO    : Communication Round: 6 / 50; Client: 19 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.019258705899119377
+2026-09-04 04:09:31,512 INFO    : Communication Round: 6 / 50; Client: 9 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.020921632647514343
+2026-09-04 04:09:31,872 INFO    : Communication Round 6 's Communication Cost: 10023.539245605469 MB
+2026-09-04 04:09:31,872 INFO    : Parameter aggregation
+2026-09-04 04:09:31,917 INFO    : Update Global Model
+2026-09-04 04:09:32,048 INFO    : Global Model testing at Communication 6/ 50
+2026-09-04 04:09:32,048 INFO    : Total GPU seconds: 746.4466223716736, Avg GPU seconds over client: 37.322331118583676
+2026-09-04 04:10:02,845 INFO    : ACC: 0.49, DEO: 0.004, SPD:0.0
+2026-09-04 04:10:03,686 INFO    : Checkpoint saved at round boundary 6: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:10:03,686 INFO    : Communication Round: 7; Select clients: [ 7 16]; Start Local Training!
+2026-09-04 04:12:54,092 INFO    : Communication Round: 7 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.019849995151162148
+2026-09-04 04:13:00,935 INFO    : Communication Round: 7 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.010599253699183464
+2026-09-04 04:13:01,212 INFO    : Communication Round 7 's Communication Cost: 11694.129119873047 MB
+2026-09-04 04:13:01,212 INFO    : Parameter aggregation
+2026-09-04 04:13:01,262 INFO    : Update Global Model
+2026-09-04 04:13:01,395 INFO    : Global Model testing at Communication 7/ 50
+2026-09-04 04:13:01,395 INFO    : Total GPU seconds: 921.8712079524994, Avg GPU seconds over client: 46.09356039762497
+2026-09-04 04:13:32,267 INFO    : ACC: 0.682, DEO: 0.02, SPD:0.029
+2026-09-04 04:13:33,135 INFO    : Checkpoint saved at round boundary 7: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:13:33,136 INFO    : Communication Round: 8; Select clients: [ 6 11]; Start Local Training!
+2026-09-04 04:13:39,897 INFO    : Communication Round: 8 / 50; Client: 6 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.016716381534934044
+2026-09-04 04:13:41,051 INFO    : Communication Round: 8 / 50; Client: 11 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.02068115584552288
+2026-09-04 04:13:41,268 INFO    : Communication Round 8 's Communication Cost: 13364.718994140625 MB
+2026-09-04 04:13:41,268 INFO    : Parameter aggregation
+2026-09-04 04:13:41,311 INFO    : Update Global Model
+2026-09-04 04:13:41,428 INFO    : Global Model testing at Communication 8/ 50
+2026-09-04 04:13:41,429 INFO    : Total GPU seconds: 928.682820558548, Avg GPU seconds over client: 46.434141027927396
+2026-09-04 04:14:24,821 INFO    : ACC: 0.549, DEO: 0.001, SPD:0.007
+2026-09-04 04:14:25,866 INFO    : Checkpoint saved at round boundary 8: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:14:25,866 INFO    : Communication Round: 9; Select clients: [15  4]; Start Local Training!
+2026-09-04 04:16:47,717 INFO    : Communication Round: 9 / 50; Client: 15 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.017308203503489494
+2026-09-04 04:17:13,123 INFO    : Communication Round: 9 / 50; Client: 4 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01980205625295639
+2026-09-04 04:17:13,346 INFO    : Communication Round 9 's Communication Cost: 15035.308868408203 MB
+2026-09-04 04:17:13,346 INFO    : Parameter aggregation
+2026-09-04 04:17:13,389 INFO    : Update Global Model
+2026-09-04 04:17:13,506 INFO    : Global Model testing at Communication 9/ 50
+2026-09-04 04:17:13,506 INFO    : Total GPU seconds: 1094.258490562439, Avg GPU seconds over client: 54.712924528121945
+2026-09-04 04:18:01,474 INFO    : ACC: 0.66, DEO: 0.003, SPD:0.026
+2026-09-04 04:18:02,450 INFO    : Checkpoint saved at round boundary 9: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:18:02,451 INFO    : Communication Round: 10; Select clients: [18 19]; Start Local Training!
+2026-09-04 04:19:34,726 INFO    : Communication Round: 10 / 50; Client: 18 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0128342155367136
+2026-09-04 04:20:07,149 INFO    : Communication Round: 10 / 50; Client: 19 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01549047976732254
+2026-09-04 04:20:07,467 INFO    : Communication Round 10 's Communication Cost: 16705.89874267578 MB
+2026-09-04 04:20:07,467 INFO    : Parameter aggregation
+2026-09-04 04:20:07,511 INFO    : Update Global Model
+2026-09-04 04:20:07,628 INFO    : Global Model testing at Communication 10/ 50
+2026-09-04 04:20:07,628 INFO    : Total GPU seconds: 1217.3679444789886, Avg GPU seconds over client: 60.86839722394943
+2026-09-04 04:21:08,991 INFO    : ACC: 0.685, DEO: 0.018, SPD:0.058
+2026-09-04 04:21:10,112 INFO    : Checkpoint saved at round boundary 10: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:21:10,112 INFO    : Communication Round: 11; Select clients: [3 5]; Start Local Training!
+2026-09-04 04:21:31,706 INFO    : Communication Round: 11 / 50; Client: 3 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.017845112830400467
+2026-09-04 04:22:21,666 INFO    : Communication Round: 11 / 50; Client: 5 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012358943931758404
+2026-09-04 04:22:21,894 INFO    : Communication Round 11 's Communication Cost: 18376.48861694336 MB
+2026-09-04 04:22:21,894 INFO    : Parameter aggregation
+2026-09-04 04:22:21,938 INFO    : Update Global Model
+2026-09-04 04:22:22,071 INFO    : Global Model testing at Communication 11/ 50
+2026-09-04 04:22:22,071 INFO    : Total GPU seconds: 1287.5576076507568, Avg GPU seconds over client: 64.37788038253784
+2026-09-04 04:23:05,892 INFO    : ACC: 0.552, DEO: 0.011, SPD:0.015
+2026-09-04 04:23:06,771 INFO    : Checkpoint saved at round boundary 11: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:23:06,771 INFO    : Communication Round: 12; Select clients: [18  5]; Start Local Training!
+2026-09-04 04:24:16,196 INFO    : Communication Round: 12 / 50; Client: 18 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013349884189665318
+2026-09-04 04:25:06,124 INFO    : Communication Round: 12 / 50; Client: 5 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.00541298370808363
+2026-09-04 04:25:06,350 INFO    : Communication Round 12 's Communication Cost: 20047.078491210938 MB
+2026-09-04 04:25:06,350 INFO    : Parameter aggregation
+2026-09-04 04:25:06,394 INFO    : Update Global Model
+2026-09-04 04:25:06,506 INFO    : Global Model testing at Communication 12/ 50
+2026-09-04 04:25:06,506 INFO    : Total GPU seconds: 1405.4159083366394, Avg GPU seconds over client: 70.27079541683197
+2026-09-04 04:26:08,029 INFO    : ACC: 0.638, DEO: 0.006, SPD:0.057
+2026-09-04 04:26:08,940 INFO    : Checkpoint saved at round boundary 12: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:26:08,941 INFO    : Communication Round: 13; Select clients: [7 2]; Start Local Training!
+2026-09-04 04:31:08,152 INFO    : Communication Round: 13 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.017195016145706177
+2026-09-04 04:31:15,588 INFO    : Communication Round: 13 / 50; Client: 2 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.007672389969229698
+2026-09-04 04:31:15,837 INFO    : Communication Round 13 's Communication Cost: 21717.668365478516 MB
+2026-09-04 04:31:15,837 INFO    : Parameter aggregation
+2026-09-04 04:31:15,882 INFO    : Update Global Model
+2026-09-04 04:31:16,018 INFO    : Global Model testing at Communication 13/ 50
+2026-09-04 04:31:16,018 INFO    : Total GPU seconds: 1709.9267137050629, Avg GPU seconds over client: 85.49633568525314
+2026-09-04 04:31:46,773 INFO    : ACC: 0.728, DEO: 0.018, SPD:0.058
+2026-09-04 04:31:47,625 INFO    : Checkpoint saved at round boundary 13: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:31:47,626 INFO    : Communication Round: 14; Select clients: [8 7]; Start Local Training!
+2026-09-04 04:34:19,559 INFO    : Communication Round: 14 / 50; Client: 8 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012784688733518124
+2026-09-04 04:37:39,808 INFO    : Communication Round: 14 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0164682324975729
+2026-09-04 04:37:40,326 INFO    : Communication Round 14 's Communication Cost: 23388.258239746094 MB
+2026-09-04 04:37:40,326 INFO    : Parameter aggregation
+2026-09-04 04:37:40,367 INFO    : Update Global Model
+2026-09-04 04:37:40,493 INFO    : Global Model testing at Communication 14/ 50
+2026-09-04 04:37:40,494 INFO    : Total GPU seconds: 2059.817944288254, Avg GPU seconds over client: 102.99089721441268
+2026-09-04 04:38:28,471 INFO    : ACC: 0.73, DEO: 0.012, SPD:0.067
+2026-09-04 04:38:29,443 INFO    : Checkpoint saved at round boundary 14: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:38:29,443 INFO    : Communication Round: 15; Select clients: [6 9]; Start Local Training!
+2026-09-04 04:39:17,754 INFO    : Communication Round: 15 / 50; Client: 6 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.015002457424998283
+2026-09-04 04:40:13,965 INFO    : Communication Round: 15 / 50; Client: 9 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.016013510525226593
+2026-09-04 04:40:14,321 INFO    : Communication Round 15 's Communication Cost: 25058.848114013672 MB
+2026-09-04 04:40:14,321 INFO    : Parameter aggregation
+2026-09-04 04:40:14,365 INFO    : Update Global Model
+2026-09-04 04:40:14,493 INFO    : Global Model testing at Communication 15/ 50
+2026-09-04 04:40:14,493 INFO    : Total GPU seconds: 2162.811104297638, Avg GPU seconds over client: 108.1405552148819
+2026-09-04 04:40:45,228 INFO    : ACC: 0.747, DEO: 0.018, SPD:0.044
+2026-09-04 04:40:46,072 INFO    : Checkpoint saved at round boundary 15: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:40:46,073 INFO    : Communication Round: 16; Select clients: [11  6]; Start Local Training!
+2026-09-04 04:40:46,954 INFO    : Communication Round: 16 / 50; Client: 11 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.017993060871958733
+2026-09-04 04:40:53,992 INFO    : Communication Round: 16 / 50; Client: 6 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013797617517411709
+2026-09-04 04:40:54,249 INFO    : Communication Round 16 's Communication Cost: 26729.43798828125 MB
+2026-09-04 04:40:54,250 INFO    : Parameter aggregation
+2026-09-04 04:40:54,293 INFO    : Update Global Model
+2026-09-04 04:40:54,417 INFO    : Global Model testing at Communication 16/ 50
+2026-09-04 04:40:54,417 INFO    : Total GPU seconds: 2169.7332191467285, Avg GPU seconds over client: 108.48666095733643
+2026-09-04 04:41:25,182 INFO    : ACC: 0.717, DEO: 0.028, SPD:0.019
+2026-09-04 04:41:25,945 INFO    : Checkpoint saved at round boundary 16: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:41:25,945 INFO    : Communication Round: 17; Select clients: [ 2 14]; Start Local Training!
+2026-09-04 04:41:32,655 INFO    : Communication Round: 17 / 50; Client: 2 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01092403195798397
+2026-09-04 04:41:46,900 INFO    : Communication Round: 17 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.006770022213459015
+2026-09-04 04:41:47,246 INFO    : Communication Round 17 's Communication Cost: 28400.027862548828 MB
+2026-09-04 04:41:47,246 INFO    : Parameter aggregation
+2026-09-04 04:41:47,290 INFO    : Update Global Model
+2026-09-04 04:41:47,426 INFO    : Global Model testing at Communication 17/ 50
+2026-09-04 04:41:47,426 INFO    : Total GPU seconds: 2189.767292737961, Avg GPU seconds over client: 109.48836463689804
+2026-09-04 04:42:18,174 INFO    : ACC: 0.564, DEO: 0.003, SPD:0.016
+2026-09-04 04:42:19,016 INFO    : Checkpoint saved at round boundary 17: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:42:19,017 INFO    : Communication Round: 18; Select clients: [ 4 16]; Start Local Training!
+2026-09-04 04:42:22,833 INFO    : Communication Round: 18 / 50; Client: 4 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.022996045649051666
+2026-09-04 04:42:29,367 INFO    : Communication Round: 18 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01693522371351719
+2026-09-04 04:42:29,614 INFO    : Communication Round 18 's Communication Cost: 30070.617736816406 MB
+2026-09-04 04:42:29,614 INFO    : Parameter aggregation
+2026-09-04 04:42:29,656 INFO    : Update Global Model
+2026-09-04 04:42:29,779 INFO    : Global Model testing at Communication 18/ 50
+2026-09-04 04:42:29,779 INFO    : Total GPU seconds: 2199.150499343872, Avg GPU seconds over client: 109.9575249671936
+2026-09-04 04:43:00,556 INFO    : ACC: 0.722, DEO: 0.025, SPD:0.022
+2026-09-04 04:43:01,431 INFO    : Checkpoint saved at round boundary 18: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:43:01,432 INFO    : Communication Round: 19; Select clients: [ 9 19]; Start Local Training!
+2026-09-04 04:43:26,068 INFO    : Communication Round: 19 / 50; Client: 9 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.015536751598119736
+2026-09-04 04:43:40,576 INFO    : Communication Round: 19 / 50; Client: 19 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01339146587997675
+2026-09-04 04:43:40,855 INFO    : Communication Round 19 's Communication Cost: 31741.207611083984 MB
+2026-09-04 04:43:40,855 INFO    : Parameter aggregation
+2026-09-04 04:43:40,899 INFO    : Update Global Model
+2026-09-04 04:43:41,019 INFO    : Global Model testing at Communication 19/ 50
+2026-09-04 04:43:41,019 INFO    : Total GPU seconds: 2236.9552025794983, Avg GPU seconds over client: 111.84776012897491
+2026-09-04 04:44:11,764 INFO    : ACC: 0.75, DEO: 0.019, SPD:0.04
+2026-09-04 04:44:12,562 INFO    : Checkpoint saved at round boundary 19: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:44:12,562 INFO    : Communication Round: 20; Select clients: [ 5 16]; Start Local Training!
+2026-09-04 04:44:16,936 INFO    : Communication Round: 20 / 50; Client: 5 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.006330019794404507
+2026-09-04 04:44:23,553 INFO    : Communication Round: 20 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.006775563582777977
+2026-09-04 04:44:23,847 INFO    : Communication Round 20 's Communication Cost: 33411.79748535156 MB
+2026-09-04 04:44:23,847 INFO    : Parameter aggregation
+2026-09-04 04:44:23,890 INFO    : Update Global Model
+2026-09-04 04:44:24,009 INFO    : Global Model testing at Communication 20/ 50
+2026-09-04 04:44:24,009 INFO    : Total GPU seconds: 2246.9945855140686, Avg GPU seconds over client: 112.34972927570342
+2026-09-04 04:44:54,775 INFO    : ACC: 0.572, DEO: 0.026, SPD:0.024
+2026-09-04 04:44:55,571 INFO    : Checkpoint saved at round boundary 20: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:44:55,572 INFO    : Communication Round: 21; Select clients: [3 0]; Start Local Training!
+2026-09-04 04:44:57,634 INFO    : Communication Round: 21 / 50; Client: 3 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0033665758091956377
+2026-09-04 04:45:10,859 INFO    : Communication Round: 21 / 50; Client: 0 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014178449288010597
+2026-09-04 04:45:11,147 INFO    : Communication Round 21 's Communication Cost: 35082.38735961914 MB
+2026-09-04 04:45:11,147 INFO    : Parameter aggregation
+2026-09-04 04:45:11,190 INFO    : Update Global Model
+2026-09-04 04:45:11,327 INFO    : Global Model testing at Communication 21/ 50
+2026-09-04 04:45:11,328 INFO    : Total GPU seconds: 2261.280586719513, Avg GPU seconds over client: 113.06402933597565
+2026-09-04 04:45:42,073 INFO    : ACC: 0.727, DEO: 0.025, SPD:0.02
+2026-09-04 04:45:42,879 INFO    : Checkpoint saved at round boundary 21: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:45:42,879 INFO    : Communication Round: 22; Select clients: [17  2]; Start Local Training!
+2026-09-04 04:45:51,313 INFO    : Communication Round: 22 / 50; Client: 17 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0116117550060153
+2026-09-04 04:45:58,406 INFO    : Communication Round: 22 / 50; Client: 2 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.010631138458848
+2026-09-04 04:45:58,652 INFO    : Communication Round 22 's Communication Cost: 36752.97723388672 MB
+2026-09-04 04:45:58,652 INFO    : Parameter aggregation
+2026-09-04 04:45:58,697 INFO    : Update Global Model
+2026-09-04 04:45:58,818 INFO    : Global Model testing at Communication 22/ 50
+2026-09-04 04:45:58,818 INFO    : Total GPU seconds: 2275.81715631485, Avg GPU seconds over client: 113.7908578157425
+2026-09-04 04:46:29,548 INFO    : ACC: 0.629, DEO: 0.005, SPD:0.056
+2026-09-04 04:46:30,375 INFO    : Checkpoint saved at round boundary 22: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:46:30,375 INFO    : Communication Round: 23; Select clients: [3 9]; Start Local Training!
+2026-09-04 04:46:32,448 INFO    : Communication Round: 23 / 50; Client: 3 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.02669811248779297
+2026-09-04 04:51:19,966 INFO    : Communication Round: 23 / 50; Client: 9 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.015656573697924614
+2026-09-04 04:51:20,329 INFO    : Communication Round 23 's Communication Cost: 38423.5671081543 MB
+2026-09-04 04:51:20,329 INFO    : Parameter aggregation
+2026-09-04 04:51:20,374 INFO    : Update Global Model
+2026-09-04 04:51:20,521 INFO    : Global Model testing at Communication 23/ 50
+2026-09-04 04:51:20,521 INFO    : Total GPU seconds: 2563.928480386734, Avg GPU seconds over client: 128.1964240193367
+2026-09-04 04:51:51,286 INFO    : ACC: 0.767, DEO: 0.003, SPD:0.06
+2026-09-04 04:51:52,114 INFO    : Checkpoint saved at round boundary 23: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:51:52,115 INFO    : Communication Round: 24; Select clients: [18  2]; Start Local Training!
+2026-09-04 04:52:44,126 INFO    : Communication Round: 24 / 50; Client: 18 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.010619240812957287
+2026-09-04 04:54:05,109 INFO    : Communication Round: 24 / 50; Client: 2 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.00873364508152008
+2026-09-04 04:54:05,378 INFO    : Communication Round 24 's Communication Cost: 40094.156982421875 MB
+2026-09-04 04:54:05,378 INFO    : Parameter aggregation
+2026-09-04 04:54:05,421 INFO    : Update Global Model
+2026-09-04 04:54:05,535 INFO    : Global Model testing at Communication 24/ 50
+2026-09-04 04:54:05,535 INFO    : Total GPU seconds: 2695.3543107509613, Avg GPU seconds over client: 134.76771553754807
+2026-09-04 04:54:55,612 INFO    : ACC: 0.647, DEO: 0.007, SPD:0.077
+2026-09-04 04:54:56,429 INFO    : Checkpoint saved at round boundary 24: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:54:56,429 INFO    : Communication Round: 25; Select clients: [11 19]; Start Local Training!
+2026-09-04 04:54:57,327 INFO    : Communication Round: 25 / 50; Client: 11 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.011221596039831638
+2026-09-04 04:55:11,544 INFO    : Communication Round: 25 / 50; Client: 19 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014238479547202587
+2026-09-04 04:55:11,860 INFO    : Communication Round 25 's Communication Cost: 41764.74685668945 MB
+2026-09-04 04:55:11,860 INFO    : Parameter aggregation
+2026-09-04 04:55:11,909 INFO    : Update Global Model
+2026-09-04 04:55:12,045 INFO    : Global Model testing at Communication 25/ 50
+2026-09-04 04:55:12,045 INFO    : Total GPU seconds: 2709.455552816391, Avg GPU seconds over client: 135.47277764081954
+2026-09-04 04:55:42,825 INFO    : ACC: 0.739, DEO: 0.015, SPD:0.028
+2026-09-04 04:55:43,659 INFO    : Checkpoint saved at round boundary 25: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:55:43,659 INFO    : Communication Round: 26; Select clients: [8 7]; Start Local Training!
+2026-09-04 04:56:09,249 INFO    : Communication Round: 26 / 50; Client: 8 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.011780571192502975
+2026-09-04 04:59:00,328 INFO    : Communication Round: 26 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014597318135201931
+2026-09-04 04:59:00,830 INFO    : Communication Round 26 's Communication Cost: 43435.33673095703 MB
+2026-09-04 04:59:00,830 INFO    : Parameter aggregation
+2026-09-04 04:59:00,874 INFO    : Update Global Model
+2026-09-04 04:59:01,006 INFO    : Global Model testing at Communication 26/ 50
+2026-09-04 04:59:01,007 INFO    : Total GPU seconds: 2904.1121830940247, Avg GPU seconds over client: 145.20560915470122
+2026-09-04 04:59:31,782 INFO    : ACC: 0.776, DEO: 0.009, SPD:0.078
+2026-09-04 04:59:32,608 INFO    : Checkpoint saved at round boundary 26: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 04:59:32,608 INFO    : Communication Round: 27; Select clients: [17  8]; Start Local Training!
+2026-09-04 04:59:41,048 INFO    : Communication Round: 27 / 50; Client: 17 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.008835921995341778
+2026-09-04 05:03:43,390 INFO    : Communication Round: 27 / 50; Client: 8 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.011119053699076176
+2026-09-04 05:03:43,742 INFO    : Communication Round 27 's Communication Cost: 45105.92660522461 MB
+2026-09-04 05:03:43,742 INFO    : Parameter aggregation
+2026-09-04 05:03:43,786 INFO    : Update Global Model
+2026-09-04 05:03:43,903 INFO    : Global Model testing at Communication 27/ 50
+2026-09-04 05:03:43,903 INFO    : Total GPU seconds: 3153.319470643997, Avg GPU seconds over client: 157.66597353219987
+2026-09-04 05:04:31,881 INFO    : ACC: 0.693, DEO: 0.011, SPD:0.087
+2026-09-04 05:04:32,837 INFO    : Checkpoint saved at round boundary 27: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:04:32,837 INFO    : Communication Round: 28; Select clients: [10 18]; Start Local Training!
+2026-09-04 05:04:50,282 INFO    : Communication Round: 28 / 50; Client: 10 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01801680028438568
+2026-09-04 05:05:15,466 INFO    : Communication Round: 28 / 50; Client: 18 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.009513882920145988
+2026-09-04 05:05:15,785 INFO    : Communication Round 28 's Communication Cost: 46776.51647949219 MB
+2026-09-04 05:05:15,785 INFO    : Parameter aggregation
+2026-09-04 05:05:15,832 INFO    : Update Global Model
+2026-09-04 05:05:15,952 INFO    : Global Model testing at Communication 28/ 50
+2026-09-04 05:05:15,952 INFO    : Total GPU seconds: 3194.753995656967, Avg GPU seconds over client: 159.73769978284835
+2026-09-04 05:05:46,727 INFO    : ACC: 0.698, DEO: 0.013, SPD:0.091
+2026-09-04 05:05:47,591 INFO    : Checkpoint saved at round boundary 28: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:05:47,591 INFO    : Communication Round: 29; Select clients: [ 4 12]; Start Local Training!
+2026-09-04 05:05:51,415 INFO    : Communication Round: 29 / 50; Client: 4 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.016203956678509712
+2026-09-04 05:05:59,445 INFO    : Communication Round: 29 / 50; Client: 12 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014172011986374855
+2026-09-04 05:05:59,699 INFO    : Communication Round 29 's Communication Cost: 48447.106353759766 MB
+2026-09-04 05:05:59,699 INFO    : Parameter aggregation
+2026-09-04 05:05:59,744 INFO    : Update Global Model
+2026-09-04 05:05:59,861 INFO    : Global Model testing at Communication 29/ 50
+2026-09-04 05:05:59,861 INFO    : Total GPU seconds: 3205.575847864151, Avg GPU seconds over client: 160.27879239320754
+2026-09-04 05:06:30,651 INFO    : ACC: 0.787, DEO: 0.023, SPD:0.093
+2026-09-04 05:06:31,489 INFO    : Checkpoint saved at round boundary 29: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:06:31,489 INFO    : Communication Round: 30; Select clients: [17 18]; Start Local Training!
+2026-09-04 05:06:39,975 INFO    : Communication Round: 30 / 50; Client: 17 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.008589006960391998
+2026-09-04 05:06:58,533 INFO    : Communication Round: 30 / 50; Client: 18 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.00958117377012968
+2026-09-04 05:06:58,851 INFO    : Communication Round 30 's Communication Cost: 50117.696228027344 MB
+2026-09-04 05:06:58,851 INFO    : Parameter aggregation
+2026-09-04 05:06:58,895 INFO    : Update Global Model
+2026-09-04 05:06:59,046 INFO    : Global Model testing at Communication 30/ 50
+2026-09-04 05:06:59,046 INFO    : Total GPU seconds: 3231.508099079132, Avg GPU seconds over client: 161.5754049539566
+2026-09-04 05:07:29,815 INFO    : ACC: 0.67, DEO: 0.01, SPD:0.084
+2026-09-04 05:07:30,663 INFO    : Checkpoint saved at round boundary 30: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:07:30,663 INFO    : Communication Round: 31; Select clients: [13 17]; Start Local Training!
+2026-09-04 05:07:36,593 INFO    : Communication Round: 31 / 50; Client: 13 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0027662510983645916
+2026-09-04 05:07:45,115 INFO    : Communication Round: 31 / 50; Client: 17 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.00772722577676177
+2026-09-04 05:07:45,373 INFO    : Communication Round 31 's Communication Cost: 51788.28610229492 MB
+2026-09-04 05:07:45,373 INFO    : Parameter aggregation
+2026-09-04 05:07:45,416 INFO    : Update Global Model
+2026-09-04 05:07:45,537 INFO    : Global Model testing at Communication 31/ 50
+2026-09-04 05:07:45,537 INFO    : Total GPU seconds: 3244.9233899116516, Avg GPU seconds over client: 162.2461694955826
+2026-09-04 05:08:16,298 INFO    : ACC: 0.609, DEO: 0.004, SPD:0.058
+2026-09-04 05:08:17,106 INFO    : Checkpoint saved at round boundary 31: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:08:17,106 INFO    : Communication Round: 32; Select clients: [15 16]; Start Local Training!
+2026-09-04 05:08:38,535 INFO    : Communication Round: 32 / 50; Client: 15 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01419828087091446
+2026-09-04 05:08:45,254 INFO    : Communication Round: 32 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013459702953696251
+2026-09-04 05:08:45,513 INFO    : Communication Round 32 's Communication Cost: 53458.8759765625 MB
+2026-09-04 05:08:45,513 INFO    : Parameter aggregation
+2026-09-04 05:08:45,556 INFO    : Update Global Model
+2026-09-04 05:08:45,678 INFO    : Global Model testing at Communication 32/ 50
+2026-09-04 05:08:45,678 INFO    : Total GPU seconds: 3271.816875219345, Avg GPU seconds over client: 163.59084376096726
+2026-09-04 05:09:20,518 INFO    : ACC: 0.757, DEO: 0.001, SPD:0.039
+2026-09-04 05:09:21,441 INFO    : Checkpoint saved at round boundary 32: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:09:21,442 INFO    : Communication Round: 33; Select clients: [4 5]; Start Local Training!
+2026-09-04 05:10:02,549 INFO    : Communication Round: 33 / 50; Client: 4 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.014342098496854305
+2026-09-04 05:11:19,597 INFO    : Communication Round: 33 / 50; Client: 5 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.005033947993069887
+2026-09-04 05:11:19,830 INFO    : Communication Round 33 's Communication Cost: 55129.46585083008 MB
+2026-09-04 05:11:19,830 INFO    : Parameter aggregation
+2026-09-04 05:11:19,874 INFO    : Update Global Model
+2026-09-04 05:11:19,984 INFO    : Global Model testing at Communication 33/ 50
+2026-09-04 05:11:19,984 INFO    : Total GPU seconds: 3388.6968278884888, Avg GPU seconds over client: 169.43484139442444
+2026-09-04 05:12:37,509 INFO    : ACC: 0.725, DEO: 0.012, SPD:0.022
+2026-09-04 05:12:38,646 INFO    : Checkpoint saved at round boundary 33: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:12:38,647 INFO    : Communication Round: 34; Select clients: [6 3]; Start Local Training!
+2026-09-04 05:14:05,363 INFO    : Communication Round: 34 / 50; Client: 6 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012014077045023441
+2026-09-04 05:14:18,343 INFO    : Communication Round: 34 / 50; Client: 3 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.005150726996362209
+2026-09-04 05:14:18,566 INFO    : Communication Round 34 's Communication Cost: 56800.055725097656 MB
+2026-09-04 05:14:18,566 INFO    : Parameter aggregation
+2026-09-04 05:14:18,607 INFO    : Update Global Model
+2026-09-04 05:14:18,717 INFO    : Global Model testing at Communication 34/ 50
+2026-09-04 05:14:18,717 INFO    : Total GPU seconds: 3487.0610423088074, Avg GPU seconds over client: 174.35305211544036
+2026-09-04 05:14:52,229 INFO    : ACC: 0.732, DEO: 0.011, SPD:0.023
+2026-09-04 05:14:53,065 INFO    : Checkpoint saved at round boundary 34: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:14:53,066 INFO    : Communication Round: 35; Select clients: [ 8 19]; Start Local Training!
+2026-09-04 05:16:42,575 INFO    : Communication Round: 35 / 50; Client: 8 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.011108036153018475
+2026-09-04 05:17:38,446 INFO    : Communication Round: 35 / 50; Client: 19 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.011957689188420773
+2026-09-04 05:17:38,750 INFO    : Communication Round 35 's Communication Cost: 58470.645599365234 MB
+2026-09-04 05:17:38,750 INFO    : Parameter aggregation
+2026-09-04 05:17:38,794 INFO    : Update Global Model
+2026-09-04 05:17:38,946 INFO    : Global Model testing at Communication 35/ 50
+2026-09-04 05:17:38,946 INFO    : Total GPU seconds: 3650.7949965000153, Avg GPU seconds over client: 182.53974982500077
+2026-09-04 05:18:09,705 INFO    : ACC: 0.791, DEO: 0.019, SPD:0.089
+2026-09-04 05:18:10,541 INFO    : Checkpoint saved at round boundary 35: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:18:10,542 INFO    : Communication Round: 36; Select clients: [3 2]; Start Local Training!
+2026-09-04 05:18:12,563 INFO    : Communication Round: 36 / 50; Client: 3 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012068468146026134
+2026-09-04 05:18:19,535 INFO    : Communication Round: 36 / 50; Client: 2 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.006526215933263302
+2026-09-04 05:18:19,788 INFO    : Communication Round 36 's Communication Cost: 60141.23547363281 MB
+2026-09-04 05:18:19,788 INFO    : Parameter aggregation
+2026-09-04 05:18:19,830 INFO    : Update Global Model
+2026-09-04 05:18:19,946 INFO    : Global Model testing at Communication 36/ 50
+2026-09-04 05:18:19,946 INFO    : Total GPU seconds: 3658.8113782405853, Avg GPU seconds over client: 182.94056891202928
+2026-09-04 05:18:50,717 INFO    : ACC: 0.71, DEO: 0.012, SPD:0.084
+2026-09-04 05:18:51,586 INFO    : Checkpoint saved at round boundary 36: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:18:51,586 INFO    : Communication Round: 37; Select clients: [ 3 11]; Start Local Training!
+2026-09-04 05:18:53,723 INFO    : Communication Round: 37 / 50; Client: 3 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.019827738404273987
+2026-09-04 05:18:54,799 INFO    : Communication Round: 37 / 50; Client: 11 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.010656450875103474
+2026-09-04 05:18:55,018 INFO    : Communication Round 37 's Communication Cost: 61811.82534790039 MB
+2026-09-04 05:18:55,018 INFO    : Parameter aggregation
+2026-09-04 05:18:55,061 INFO    : Update Global Model
+2026-09-04 05:18:55,175 INFO    : Global Model testing at Communication 37/ 50
+2026-09-04 05:18:55,175 INFO    : Total GPU seconds: 3661.006535768509, Avg GPU seconds over client: 183.05032678842545
+2026-09-04 05:19:25,981 INFO    : ACC: 0.799, DEO: 0.023, SPD:0.075
+2026-09-04 05:19:26,814 INFO    : Checkpoint saved at round boundary 37: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:19:26,815 INFO    : Communication Round: 38; Select clients: [ 7 15]; Start Local Training!
+2026-09-04 05:20:11,679 INFO    : Communication Round: 38 / 50; Client: 7 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013543975539505482
+2026-09-04 05:20:33,048 INFO    : Communication Round: 38 / 50; Client: 15 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012740357778966427
+2026-09-04 05:20:33,387 INFO    : Communication Round 38 's Communication Cost: 63482.41522216797 MB
+2026-09-04 05:20:33,387 INFO    : Parameter aggregation
+2026-09-04 05:20:33,430 INFO    : Update Global Model
+2026-09-04 05:20:33,554 INFO    : Global Model testing at Communication 38/ 50
+2026-09-04 05:20:33,554 INFO    : Total GPU seconds: 3725.5900461673737, Avg GPU seconds over client: 186.27950230836868
+2026-09-04 05:21:04,324 INFO    : ACC: 0.806, DEO: 0.016, SPD:0.07
+2026-09-04 05:21:05,134 INFO    : Checkpoint saved at round boundary 38: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:21:05,134 INFO    : Communication Round: 39; Select clients: [14 13]; Start Local Training!
+2026-09-04 05:21:19,485 INFO    : Communication Round: 39 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.004539940506219864
+2026-09-04 05:21:25,595 INFO    : Communication Round: 39 / 50; Client: 13 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.005831497255712748
+2026-09-04 05:21:25,846 INFO    : Communication Round 39 's Communication Cost: 65153.00509643555 MB
+2026-09-04 05:21:25,846 INFO    : Parameter aggregation
+2026-09-04 05:21:25,891 INFO    : Update Global Model
+2026-09-04 05:21:26,081 INFO    : Global Model testing at Communication 39/ 50
+2026-09-04 05:21:26,081 INFO    : Total GPU seconds: 3744.920348405838, Avg GPU seconds over client: 187.2460174202919
+2026-09-04 05:21:56,852 INFO    : ACC: 0.591, DEO: 0.002, SPD:0.026
+2026-09-04 05:21:57,670 INFO    : Checkpoint saved at round boundary 39: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:21:57,670 INFO    : Communication Round: 40; Select clients: [14 10]; Start Local Training!
+2026-09-04 05:22:11,740 INFO    : Communication Round: 40 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0029678642749786377
+2026-09-04 05:22:14,631 INFO    : Communication Round: 40 / 50; Client: 10 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.025107501074671745
+2026-09-04 05:22:14,867 INFO    : Communication Round 40 's Communication Cost: 66823.59497070312 MB
+2026-09-04 05:22:14,867 INFO    : Parameter aggregation
+2026-09-04 05:22:14,911 INFO    : Update Global Model
+2026-09-04 05:22:15,036 INFO    : Global Model testing at Communication 40/ 50
+2026-09-04 05:22:15,036 INFO    : Total GPU seconds: 3760.809032201767, Avg GPU seconds over client: 188.04045161008835
+2026-09-04 05:22:45,810 INFO    : ACC: 0.589, DEO: 0.002, SPD:0.027
+2026-09-04 05:22:46,671 INFO    : Checkpoint saved at round boundary 40: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:22:46,671 INFO    : Communication Round: 41; Select clients: [17  3]; Start Local Training!
+2026-09-04 05:22:57,182 INFO    : Communication Round: 41 / 50; Client: 17 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.007571312133222818
+2026-09-04 05:23:28,925 INFO    : Communication Round: 41 / 50; Client: 3 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.040366653352975845
+2026-09-04 05:23:29,157 INFO    : Communication Round 41 's Communication Cost: 68494.1848449707 MB
+2026-09-04 05:23:29,157 INFO    : Parameter aggregation
+2026-09-04 05:23:29,199 INFO    : Update Global Model
+2026-09-04 05:23:29,322 INFO    : Global Model testing at Communication 41/ 50
+2026-09-04 05:23:29,322 INFO    : Total GPU seconds: 3801.8508315086365, Avg GPU seconds over client: 190.09254157543182
+2026-09-04 05:24:46,772 INFO    : ACC: 0.686, DEO: 0.009, SPD:0.077
+2026-09-04 05:24:47,906 INFO    : Checkpoint saved at round boundary 41: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:24:47,906 INFO    : Communication Round: 42; Select clients: [12 13]; Start Local Training!
+2026-09-04 05:27:01,108 INFO    : Communication Round: 42 / 50; Client: 12 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01376176718622446
+2026-09-04 05:27:41,360 INFO    : Communication Round: 42 / 50; Client: 13 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0024383561685681343
+2026-09-04 05:27:41,602 INFO    : Communication Round 42 's Communication Cost: 70164.77471923828 MB
+2026-09-04 05:27:41,602 INFO    : Parameter aggregation
+2026-09-04 05:27:41,644 INFO    : Update Global Model
+2026-09-04 05:27:41,755 INFO    : Global Model testing at Communication 42/ 50
+2026-09-04 05:27:41,755 INFO    : Total GPU seconds: 3973.902576684952, Avg GPU seconds over client: 198.69512883424758
+2026-09-04 05:28:29,599 INFO    : ACC: 0.719, DEO: 0.012, SPD:0.083
+2026-09-04 05:28:30,588 INFO    : Checkpoint saved at round boundary 42: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:28:30,589 INFO    : Communication Round: 43; Select clients: [14 13]; Start Local Training!
+2026-09-04 05:28:44,923 INFO    : Communication Round: 43 / 50; Client: 14 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0033817868679761887
+2026-09-04 05:28:51,009 INFO    : Communication Round: 43 / 50; Client: 13 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0028155066538602114
+2026-09-04 05:28:51,249 INFO    : Communication Round 43 's Communication Cost: 71835.36459350586 MB
+2026-09-04 05:28:51,249 INFO    : Parameter aggregation
+2026-09-04 05:28:51,292 INFO    : Update Global Model
+2026-09-04 05:28:51,410 INFO    : Global Model testing at Communication 43/ 50
+2026-09-04 05:28:51,410 INFO    : Total GPU seconds: 3993.0992345809937, Avg GPU seconds over client: 199.6549617290497
+2026-09-04 05:29:22,124 INFO    : ACC: 0.58, DEO: 0.002, SPD:0.026
+2026-09-04 05:29:22,945 INFO    : Checkpoint saved at round boundary 43: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:29:22,945 INFO    : Communication Round: 44; Select clients: [ 1 11]; Start Local Training!
+2026-09-04 05:29:29,722 INFO    : Communication Round: 44 / 50; Client: 1 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01749120093882084
+2026-09-04 05:29:30,765 INFO    : Communication Round: 44 / 50; Client: 11 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01328529603779316
+2026-09-04 05:29:30,986 INFO    : Communication Round 44 's Communication Cost: 73505.95446777344 MB
+2026-09-04 05:29:30,986 INFO    : Parameter aggregation
+2026-09-04 05:29:31,031 INFO    : Update Global Model
+2026-09-04 05:29:31,153 INFO    : Global Model testing at Communication 44/ 50
+2026-09-04 05:29:31,153 INFO    : Total GPU seconds: 3999.9571845531464, Avg GPU seconds over client: 199.99785922765733
+2026-09-04 05:30:01,887 INFO    : ACC: 0.806, DEO: 0.027, SPD:0.07
+2026-09-04 05:30:02,717 INFO    : Checkpoint saved at round boundary 44: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:30:02,717 INFO    : Communication Round: 45; Select clients: [ 0 13]; Start Local Training!
+2026-09-04 05:30:15,631 INFO    : Communication Round: 45 / 50; Client: 0 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.012185629457235336
+2026-09-04 05:30:21,716 INFO    : Communication Round: 45 / 50; Client: 13 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.005742421839386225
+2026-09-04 05:30:21,957 INFO    : Communication Round 45 's Communication Cost: 75176.54434204102 MB
+2026-09-04 05:30:21,957 INFO    : Parameter aggregation
+2026-09-04 05:30:22,001 INFO    : Update Global Model
+2026-09-04 05:30:22,134 INFO    : Global Model testing at Communication 45/ 50
+2026-09-04 05:30:22,134 INFO    : Total GPU seconds: 4017.853522539139, Avg GPU seconds over client: 200.89267612695693
+2026-09-04 05:30:52,891 INFO    : ACC: 0.81, DEO: 0.02, SPD:0.081
+2026-09-04 05:30:53,725 INFO    : Checkpoint saved at round boundary 45: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:30:53,726 INFO    : Communication Round: 46; Select clients: [16  9]; Start Local Training!
+2026-09-04 05:31:00,066 INFO    : Communication Round: 46 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.006868730764836073
+2026-09-04 05:31:24,740 INFO    : Communication Round: 46 / 50; Client: 9 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.01313694566488266
+2026-09-04 05:31:25,093 INFO    : Communication Round 46 's Communication Cost: 76847.1342163086 MB
+2026-09-04 05:31:25,093 INFO    : Parameter aggregation
+2026-09-04 05:31:25,136 INFO    : Update Global Model
+2026-09-04 05:31:25,261 INFO    : Global Model testing at Communication 46/ 50
+2026-09-04 05:31:25,261 INFO    : Total GPU seconds: 4047.742425441742, Avg GPU seconds over client: 202.3871212720871
+2026-09-04 05:31:55,985 INFO    : ACC: 0.795, DEO: 0.013, SPD:0.053
+2026-09-04 05:31:56,776 INFO    : Checkpoint saved at round boundary 46: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:31:56,777 INFO    : Communication Round: 47; Select clients: [ 3 18]; Start Local Training!
+2026-09-04 05:31:58,849 INFO    : Communication Round: 47 / 50; Client: 3 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.006694402080029249
+2026-09-04 05:34:22,790 INFO    : Communication Round: 47 / 50; Client: 18 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.00924446526914835
+2026-09-04 05:34:23,112 INFO    : Communication Round 47 's Communication Cost: 78517.72409057617 MB
+2026-09-04 05:34:23,112 INFO    : Parameter aggregation
+2026-09-04 05:34:23,157 INFO    : Update Global Model
+2026-09-04 05:34:23,270 INFO    : Global Model testing at Communication 47/ 50
+2026-09-04 05:34:23,270 INFO    : Total GPU seconds: 4192.459527015686, Avg GPU seconds over client: 209.6229763507843
+2026-09-04 05:34:54,170 INFO    : ACC: 0.745, DEO: 0.013, SPD:0.081
+2026-09-04 05:34:55,071 INFO    : Checkpoint saved at round boundary 47: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:34:55,072 INFO    : Communication Round: 48; Select clients: [18  1]; Start Local Training!
+2026-09-04 05:35:13,368 INFO    : Communication Round: 48 / 50; Client: 18 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.008689611218869686
+2026-09-04 05:35:20,290 INFO    : Communication Round: 48 / 50; Client: 1 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.013731320388615131
+2026-09-04 05:35:20,534 INFO    : Communication Round 48 's Communication Cost: 80188.31396484375 MB
+2026-09-04 05:35:20,534 INFO    : Parameter aggregation
+2026-09-04 05:35:20,578 INFO    : Update Global Model
+2026-09-04 05:35:20,722 INFO    : Global Model testing at Communication 48/ 50
+2026-09-04 05:35:20,722 INFO    : Total GPU seconds: 4216.550680875778, Avg GPU seconds over client: 210.82753404378892
+2026-09-04 05:35:51,472 INFO    : ACC: 0.766, DEO: 0.016, SPD:0.086
+2026-09-04 05:35:52,320 INFO    : Checkpoint saved at round boundary 48: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:35:52,321 INFO    : Communication Round: 49; Select clients: [ 5 19]; Start Local Training!
+2026-09-04 05:35:56,624 INFO    : Communication Round: 49 / 50; Client: 5 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.00903013814240694
+2026-09-04 05:36:10,807 INFO    : Communication Round: 49 / 50; Client: 19 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.011879590339958668
+2026-09-04 05:36:11,101 INFO    : Communication Round 49 's Communication Cost: 81858.90383911133 MB
+2026-09-04 05:36:11,101 INFO    : Parameter aggregation
+2026-09-04 05:36:11,146 INFO    : Update Global Model
+2026-09-04 05:36:11,266 INFO    : Global Model testing at Communication 49/ 50
+2026-09-04 05:36:11,266 INFO    : Total GPU seconds: 4233.995814085007, Avg GPU seconds over client: 211.69979070425035
+2026-09-04 05:36:42,016 INFO    : ACC: 0.756, DEO: 0.003, SPD:0.03
+2026-09-04 05:36:42,854 INFO    : Checkpoint saved at round boundary 49: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:36:42,855 INFO    : Communication Round: 50; Select clients: [ 5 16]; Start Local Training!
+2026-09-04 05:36:47,184 INFO    : Communication Round: 50 / 50; Client: 5 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.0040520974434912205
+2026-09-04 05:37:17,946 INFO    : Communication Round: 50 / 50; Client: 16 / 20; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.005012962501496077
+2026-09-04 05:37:18,197 INFO    : Communication Round 50 's Communication Cost: 83529.4937133789 MB
+2026-09-04 05:37:18,198 INFO    : Parameter aggregation
+2026-09-04 05:37:18,240 INFO    : Update Global Model
+2026-09-04 05:37:18,354 INFO    : Global Model testing at Communication 50/ 50
+2026-09-04 05:37:18,354 INFO    : Total GPU seconds: 4268.0438368320465, Avg GPU seconds over client: 213.40219184160233
+2026-09-04 05:37:18,967 INFO    : Training finish, return the global model and resumable state.
+2026-09-04 05:37:19,314 INFO    : Checkpoint saved at round boundary 50: save_path/bios/Dirichlet05/FedAvg/BERTCLASSIFIER/20Clients/experiment_state/d670aded392845a0cc7bfea5b478fe31f67d9b6c0e18d560bfd7dd19ff2c9e1b/repeat_02/checkpoint_latest.pt
+2026-09-04 05:38:07,374 INFO    : TensorBoard logging closed
+2026-09-04 05:38:07,381 INFO    : |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+2026-09-04 05:38:07,381 INFO    : |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||

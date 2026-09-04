@@ -1,0 +1,106 @@
+[TensorBoard] Support is available.
+[TensorBoard] After training, run: tensorboard --logdir=./tb_logs
+[TensorBoard] Or view all experiments: tensorboard --logdir=./tb_logs --bind_all
+2026-09-02 13:53:57,247 INFO    : Experiment 1/1 setup finish
+2026-09-02 13:53:57,247 INFO    : Parameter announcement
+2026-09-02 13:53:57,247 INFO    : ****** mode : train ******
+2026-09-02 13:53:57,247 INFO    : ****** algorithm : FedAvg ******
+2026-09-02 13:53:57,247 INFO    : ****** learning_rate : 5e-05 ******
+2026-09-02 13:53:57,247 INFO    : ****** optimize_method : sgd ******
+2026-09-02 13:53:57,247 INFO    : ****** dataset : moji ******
+2026-09-02 13:53:57,247 INFO    : ****** task : SENT_CLF ******
+2026-09-02 13:53:57,247 INFO    : ****** batch_size : 8 ******
+2026-09-02 13:53:57,247 INFO    : ****** test_batch_size : 32 ******
+2026-09-02 13:53:57,247 INFO    : ****** cuda : 0 ******
+2026-09-02 13:53:57,247 INFO    : ****** max_len : 32 ******
+2026-09-02 13:53:57,247 INFO    : ****** system_data_count : 128 ******
+2026-09-02 13:53:57,247 INFO    : ****** tb_monitor : {'gradient': False, 'embedding': False, 'fisher': False, 'sharpness': False, 'activation': False, 'update_stats': False, 'client_divergence': False} ******
+2026-09-02 13:53:57,248 INFO    : ****** tb_log_dir : None ******
+2026-09-02 13:53:57,248 INFO    : ****** model_heter_frac : 0 ******
+2026-09-02 13:53:57,248 INFO    : ****** split_strategy : Uniform ******
+2026-09-02 13:53:57,248 INFO    : ****** communication_round_I : 1 ******
+2026-09-02 13:53:57,248 INFO    : ****** algorithm_epoch_T : 1 ******
+2026-09-02 13:53:57,248 INFO    : ****** num_clients_K : 2 ******
+2026-09-02 13:53:57,248 INFO    : ****** start_exp : 1 ******
+2026-09-02 13:53:57,248 INFO    : ****** resume : False ******
+2026-09-02 13:53:57,248 INFO    : ****** exp_repeat_times : 1 ******
+2026-09-02 13:53:57,248 INFO    : ****** parallel_repeats : 1 ******
+2026-09-02 13:53:57,248 INFO    : ****** checkpoint_save_freq : 0 ******
+2026-09-02 13:53:57,248 INFO    : ****** checkpoint_keep_latest : 1 ******
+2026-09-02 13:53:57,248 INFO    : ****** CUDA_VISIBLE_DEVICES : 0 ******
+2026-09-02 13:53:57,248 INFO    : ****** use_amp : True ******
+2026-09-02 13:53:57,248 INFO    : ****** device : cuda ******
+2026-09-02 13:53:57,248 INFO    : ****** dataset_name : moji ******
+2026-09-02 13:53:57,248 INFO    : ****** hypothesis : BERTCLASSIFIER ******
+2026-09-02 13:53:57,248 INFO    : ****** classifier_type : linear ******
+2026-09-02 13:53:57,248 INFO    : ****** miu : 1 ******
+2026-09-02 13:53:57,248 INFO    : ****** γ_k_style : uniform_distribution ******
+2026-09-02 13:53:57,248 INFO    : ****** FedRenyi_λ : 1 ******
+2026-09-02 13:53:57,248 INFO    : ****** global_group_loss_gap : 0.1 ******
+2026-09-02 13:53:57,248 INFO    : ****** one_batch_per_Epoch : False ******
+2026-09-02 13:53:57,248 INFO    : ****** FL_drop_rate : 0 ******
+2026-09-02 13:53:57,248 INFO    : ****** FL_fraction : 0.1 ******
+2026-09-02 13:53:57,248 INFO    : ****** tolerance_τ : 1 ******
+2026-09-02 13:53:57,248 INFO    : ****** log_path : ./log_path/moji/Uniform/FedAvg/BERTCLASSIFIER/2Clients/1.txt ******
+2026-09-02 13:53:57,248 INFO    : ****** basic_path : ./result_path/moji/Uniform/FedAvg/BERTCLASSIFIER/2Clients ******
+2026-09-02 13:53:57,248 INFO    : ****** result_path : ./result_path/moji/Uniform/FedAvg/BERTCLASSIFIER/2Clients/1.txt ******
+2026-09-02 13:53:57,248 INFO    : ****** model_path : ./save_path/moji/Uniform/FedAvg/BERTCLASSIFIER/2Clients ******
+2026-09-02 13:53:57,248 INFO    : ****** Experiment_NO : 1 ******
+2026-09-02 13:53:57,248 INFO    : -----------------------------------------------------------------------------
+[TensorBoard] Logs saved to: ./tensorboard_log/moji/Uniform/FedAvg/BERTCLASSIFIER/2Clients/1_20260902_135357
+[TensorBoard] To view: tensorboard --logdir=./tensorboard_log/moji/Uniform/FedAvg/BERTCLASSIFIER/2Clients/1_20260902_135357
+[TensorBoard] Or view all experiments: tensorboard --logdir=./tb_logs
+2026-09-02 13:53:57,249 INFO    : TensorBoard logging initialized
+2026-09-02 13:53:57,249 INFO    : Creating dataset
+2026-09-02 13:53:57,249 INFO    : tail_index is : 128
+[Cache] Loading moji train from cache: dataset/cache/moji/train
+[Cache] Loading moji test from cache: dataset/cache/moji/test
+2026-09-02 13:53:57,877 INFO    : Creating dataloader
+[PinMemory Check] System Info:
+  GPU Available: Yes (1 devices)
+  CPU Cores: 32
+  Total Memory: 123.33 GB
+  Used Memory: 16.37 GB (13.3%)
+  Available Memory: 106.96 GB
+[PinMemory Check] ✅ All checks passed, enabling pin_memory
+[Worker Check] Recommended num_workers: 16 (CPU cores: 32)
+
+[DataLoader Config] Final settings:
+  pin_memory: True
+  num_workers: 16
+  persistent_workers: True
+2026-09-02 13:53:57,889 INFO    : Successfully loaded split indices
+Loading saved split indices...
+2026-09-02 13:53:57,889 INFO    : Model construction
+2026-09-02 13:53:58,145 INFO    : ~~~~~~ Algorithm: Federated Average ~~~~~~
+2026-09-02 13:53:58,146 INFO    : ****** Communication Cost (Formula): 167.059 MB ******
+2026-09-02 13:53:58,146 INFO    : No checkpoints found, starting from scratch
+2026-09-02 13:53:58,212 INFO    : ****** Now Playing the 1-th / 1 experiment for more persuasive Result! ******
+/home/ronnie/fairness_fl_code/tool/amp_utils.py:90: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  return torch.cuda.amp.GradScaler()
+2026-09-02 13:53:58,577 INFO    : Training process begin!
+2026-09-02 13:53:58,577 INFO    : Training Dataset Size: 128; Client Datasets Size:[64, 64]
+2026-09-02 13:53:58,580 INFO    : Communication Round: 1; Select clients: [1]; Start Local Training!
+/home/ronnie/fairness_fl_code/tool/amp_utils.py:78: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+2026-09-02 13:54:00,068 INFO    : Communication Round: 1 / 1; Client: 1 / 2; Epoch: 1; Avg One Sample's Loss Over Epoch: 0.08807134628295898
+2026-09-02 13:54:00,533 INFO    : Communication Round 1 's Communication Cost: 835.2949371337891 MB
+2026-09-02 13:54:00,537 INFO    : Parameter aggregation
+2026-09-02 13:54:00,853 INFO    : Update Global Model
+2026-09-02 13:54:00,877 INFO    : Global Model testing at Communication 1/ 1
+2026-09-02 13:54:00,877 INFO    : Total GPU seconds: 0.36147093772888184, Avg GPU seconds over client: 0.18073546886444092
+2026-09-02 13:54:01,527 INFO    : Training finish, save and return the global model.
+2026-09-02 13:54:01,768 INFO    : ****** Trained Global Model Testing ******
+2026-09-02 13:54:02,415 INFO    : ACC: 0.281, DEO: 0.075, SPD:-0.066, FR: 0.925, HM: 0.431
+2026-09-02 13:54:02,495 INFO    : ****** Fed_AVG ACC Mean±STD: 0.281±0.0 ******
+2026-09-02 13:54:02,495 INFO    : ****** Fed_AVG DEO Mean±STD: 0.075±0.0 ******
+2026-09-02 13:54:02,495 INFO    : ****** Fed_AVG SPD Mean±STD: -0.066±0.0 ******
+2026-09-02 13:54:02,495 INFO    : ****** Fed_AVG Gpu Seconds Mean±STD: 0.361±0.0 ******
+2026-09-02 13:54:02,495 INFO    : ****** Fed_AVG Communication Cost Mean±STD: 167.059±0.0 ******
+2026-09-02 13:54:02,495 INFO    : ****** Fed_AVG FR Mean±STD: 0.925±0.0 ******
+2026-09-02 13:54:02,495 INFO    : ****** Fed_AVG HM Mean±STD: 0.431±0.0 ******
+2026-09-02 13:54:02,505 INFO    : [Cleanup] Removed client model dir: client_2
+2026-09-02 13:54:02,515 INFO    : [Cleanup] Removed client model dir: client_1
+2026-09-02 13:54:02,518 INFO    : TensorBoard logging closed
+2026-09-02 13:54:02,530 INFO    : |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+2026-09-02 13:54:02,530 INFO    : |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
